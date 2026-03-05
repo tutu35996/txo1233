@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      (function () {
+        try {
+          var key = 'qc_lang';
+          var lang = localStorage.getItem(key) || document.documentElement.getAttribute('lang') || 'en';
+          document.documentElement.classList.add('qc-i18n-pending');
+          document.documentElement.setAttribute('lang', lang);
+          document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+        } catch (_) {
+          document.documentElement.classList.add('qc-i18n-pending');
+          document.documentElement.setAttribute('lang', 'en');
+          document.documentElement.setAttribute('dir', 'ltr');
+        }
+      })();
+    </script>
+    <title data-i18n="license.page_title">全球运营牌照 · TXO 合规与认证</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="查看 TXO 交易所的合法合规声明、纽约州注册信息以及官方证书查询方式，了解 AML、KYC、风控与数据隐私保护体系。"
+      data-i18n="license.page_desc"
+      data-i18n-attr="content"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png" />
+    <link rel="shortcut icon" type="image/png" href="../assets/images/favicon-32x32.png" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css?v=1.3" />
+  </head>
+  <body class="body">
+    <header class="qc-header">
+      <div class="qc-container qc-header-inner">
+        <a class="qc-logo" href="../index.html" aria-label="Qicheng Holdings Group" data-i18n="nav.logo_aria" data-i18n-attr="aria-label">
+          <img
+            class="qc-logo-mark"
+            src="../assets/images/qicheng-logo-wide.png"
+            alt="Qicheng Holdings Group"
+            data-i18n="nav.logo_alt"
+            data-i18n-attr="alt"
+          />
+        </a>
+        <nav class="qc-nav" aria-label="主导航" data-i18n="nav.aria_main" data-i18n-attr="aria-label">
+          <button class="qc-nav-toggle" aria-label="Toggle navigation" data-i18n="nav.toggle" data-i18n-attr="aria-label">
+            <span class="qc-nav-toggle-icon"></span>
+          </button>
+          <ul class="qc-nav-list">
+            <li class="qc-nav-item">
+              <a href="../index.html" class="qc-nav-link" data-i18n="nav.home">首页</a>
+            </li>
+            <li class="qc-nav-item qc-has-submenu">
+              <a class="qc-nav-link" href="./about.html" data-i18n="nav.about">
+                启诚投资
+                <span class="qc-nav-caret">▾</span>
+              </a>
+              <ul class="qc-submenu">
+                <li><a href="./about.html" data-i18n="nav.about.overview">机构概览</a></li>
+                <li><a href="./about.html#founder" data-i18n="nav.about.founder">创始人</a></li>
+                <li><a href="./about.html#structure" data-i18n="nav.about.structure">组织结构</a></li>
+                <li><a href="./about.html#qgf" data-i18n="nav.about.qgf">QGF 基金会</a></li>
+                <li><a href="./about.html#mission" data-i18n="nav.about.mission">使命</a></li>
+                <li><a href="../index.html#testimonials" data-i18n="nav.about.testimonials">用户评价</a></li>
+              </ul>
+            </li>
+            <li class="qc-nav-item qc-has-submenu">
+              <a class="qc-nav-link" href="./business-model.html#web2" data-i18n="nav.business">
+                商业模式
+                <span class="qc-nav-caret">▾</span>
+              </a>
+              <ul class="qc-submenu">
+                <li><a href="./business-model.html#web2" data-i18n="nav.business.web2">WEB2 创新</a></li>
+                <li><a href="./business-model.html#core" data-i18n="nav.business.core">核心模式</a></li>
+                <li><a href="./business-model.html#future" data-i18n="nav.business.future">未来企划</a></li>
+                <li><a href="./business-model.html#v5" data-i18n="nav.business.v5">V5 战略</a></li>
+              </ul>
+            </li>
+            <li class="qc-nav-item qc-has-submenu">
+              <a class="qc-nav-link" href="./txo.html#origin" data-i18n="nav.txo">
+                TXO 交易所
+                <span class="qc-nav-caret">▾</span>
+              </a>
+              <ul class="qc-submenu">
+                <li><a href="./txo.html#origin" data-i18n="nav.txo.origin">TXO 的诞生</a></li>
+                <li><a href="./txo.html#founder" data-i18n="nav.txo.founder">创始人</a></li>
+                <li><a href="./txo.html#team" data-i18n="nav.txo.team">研发团队</a></li>
+                <li><a href="./txo.html#offline" data-i18n="nav.txo.offline">线下交易服务</a></li>
+              </ul>
+            </li>
+            <li class="qc-nav-item qc-has-submenu">
+              <a class="qc-nav-link qc-nav-link-active" href="./license.html#statement" data-i18n="nav.license">
+                合规与牌照
+                <span class="qc-nav-caret">▾</span>
+              </a>
+              <ul class="qc-submenu">
+                <li><a href="./license.html#statement" data-i18n="nav.license.statement">合法合规声明</a></li>
+                <li><a href="./license.html#verification" data-i18n="nav.license.verification">证书查询方式</a></li>
+              </ul>
+            </li>
+            <li class="qc-nav-item qc-has-submenu">
+              <a class="qc-nav-link" href="./profit.html#signals" data-i18n="nav.profit">
+                盈利体系
+                <span class="qc-nav-caret">▾</span>
+              </a>
+              <ul class="qc-submenu">
+                <li><a href="./profit.html#signals" data-i18n="nav.profit.signals">交易信号系统</a></li>
+                <li><a href="./profit.html#referral" data-i18n="nav.profit.referral">推荐计划</a></li>
+                <li><a href="./profit.html#vip" data-i18n="nav.profit.vip">VIP 团队计划</a></li>
+                <li><a href="./profit.html#reports" data-i18n="nav.profit.reports">收益报表</a></li>
+              </ul>
+            </li>
+            <li class="qc-nav-item">
+              <a href="./calculator.html" class="qc-nav-link" data-i18n="nav.calculator">收益计算</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="qc-about-hero" id="statement" style="background: #1a1a1a;">
+        <div class="qc-container">
+          <h1 class="qc-hero-title qc-reveal reveal-up stagger-1" style="font-size: clamp(3.5rem, 8vw, 6rem);" data-i18n-html="license.hero_title">全球合规<br>安全之基</h1>
+          <p class="qc-reveal reveal-up stagger-2" data-i18n-html="license.hero_desc">
+            TXO Exchange 由 TXO COMPREHENSIVE SERVICE INC. 运营，<br class="hidden sm:block">
+            已在美国纽约州依法注册，并建立<span class="qc-text-highlight">金融级</span>内部控制体系。
+          </p>
+        </div>
+      </section>
+
+      <main class="qc-main">
+        <section class="qc-about-section">
+          <header class="qc-about-section-header qc-reveal reveal-up">
+            <div style="display: flex; justify-content: center; margin-bottom: 1.5rem;">
+              <div class="qc-dynamic-icon">
+                <div class="qc-dynamic-icon-inner">
+                  <video autoplay loop muted playsinline poster="/assets/images/qicheng/icon-compliance-fallback.jpg">
+                    <source src="/assets/images/qicheng/icon-compliance.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+            <h2 data-i18n="license.statement_title">Legal Statement</h2>
+            <h3 class="qc-gradient-title" data-i18n="license.statement_subtitle">合法合规运营</h3>
+          </header>
+          
+          <div class="qc-grid qc-grid-2 qc-reveal reveal-up stagger-1" style="gap: 4rem; align-items: center; margin-bottom: 4rem;">
+            <div class="qc-overview-text">
+              <p style="font-size: 1.1rem; line-height: 1.8; color: rgba(255,255,255,0.8); margin-bottom: 2rem; text-align: center;">
+                <span data-i18n-html="license.statement_desc">TXO COMPREHENSIVE SERVICE INC. 已通过纽约州州务卿办公室（Department of State）正式注册。官方认证文件编号为 <span class="qc-text-highlight">260104000062</span>。</span>
+              </p>
+              
+              <div class="qc-grid qc-grid-4 qc-reveal reveal-up stagger-1" style="gap: 1rem; display: grid; grid-template-columns: repeat(4, 1fr); max-width: 1000px; margin: 0 auto;">
+                <div class="qc-card" style="padding: 1.5rem; text-align: center; aspect-ratio: 1/1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                  <i class="ri-shield-keyhole-line" style="font-size: 2rem; color: #fff; margin-bottom: 0.75rem;"></i>
+                  <h4 style="color: #fff; margin-bottom: 0.5rem; font-size: 0.9rem;" data-i18n="license.aml_title">反洗钱 (AML)</h4>
+                  <p style="font-size: 0.75rem; color: rgba(255,255,255,0.5); line-height: 1.4;" data-i18n="license.aml_desc">严格的资金来源审查机制</p>
+                </div>
+                <div class="qc-card" style="padding: 1.5rem; text-align: center; aspect-ratio: 1/1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                  <i class="ri-passport-line" style="font-size: 2rem; color: #fff; margin-bottom: 0.75rem;"></i>
+                  <h4 style="color: #fff; margin-bottom: 0.5rem; font-size: 0.9rem;" data-i18n="license.kyc_title">身份识别 (KYC)</h4>
+                  <p style="font-size: 0.75rem; color: rgba(255,255,255,0.5); line-height: 1.4;" data-i18n="license.kyc_desc">全球用户身份认证体系</p>
+                </div>
+                <div class="qc-card" style="padding: 1.5rem; text-align: center; aspect-ratio: 1/1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                  <i class="ri-radar-line" style="font-size: 2rem; color: #fff; margin-bottom: 0.75rem;"></i>
+                  <h4 style="color: #fff; margin-bottom: 0.5rem; font-size: 0.9rem;" data-i18n="license.risk_title">风险控制</h4>
+                  <p style="font-size: 0.75rem; color: rgba(255,255,255,0.5); line-height: 1.4;" data-i18n="license.risk_desc">实时监测异常交易行为</p>
+                </div>
+                <div class="qc-card" style="padding: 1.5rem; text-align: center; aspect-ratio: 1/1; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                  <i class="ri-lock-2-line" style="font-size: 2rem; color: #fff; margin-bottom: 0.75rem;"></i>
+                  <h4 style="color: #fff; margin-bottom: 0.5rem; font-size: 0.9rem;" data-i18n="license.privacy_title">数据隐私</h4>
+                  <p style="font-size: 0.75rem; color: rgba(255,255,255,0.5); line-height: 1.4;" data-i18n="license.privacy_desc">银行级用户数据加密保护</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="qc-card qc-reveal reveal-right" style="padding: 2rem; background: rgba(255,255,255,0.03);">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; max-width: 800px; margin: 0 auto;">
+                  <div>
+                    <h4 style="color: #fff; margin-bottom: 1.5rem; text-align: center; font-size: 1rem;" data-i18n="license.cert_company_title">美国授权公司证书</h4>
+                    <div style="cursor: pointer;" onclick="window.open(this.querySelector('img').src, '_blank')">
+                        <img src="/assets/images/qicheng/txo-license-1.png" alt="TXO License 1" style="width: 100%; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" data-i18n="license.cert_company_alt" data-i18n-attr="alt">
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h4 style="color: #fff; margin-bottom: 1.5rem; text-align: center; font-size: 1rem;" data-i18n="license.cert_stock_title">TXO 股票证书</h4>
+                    <div style="cursor: pointer;" onclick="window.open(this.querySelector('img').src, '_blank')">
+                        <img src="/assets/images/qicheng/txo-stock-certificate.png" alt="Stock Certificate" style="width: 100%; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" data-i18n="license.cert_stock_alt" data-i18n-attr="alt">
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="verification" class="qc-about-section">
+          <header class="qc-about-section-header qc-reveal reveal-up">
+            <div style="display: flex; justify-content: center; margin-bottom: 1.5rem;">
+              <div class="qc-dynamic-icon">
+                <div class="qc-dynamic-icon-inner">
+                  <video autoplay loop muted playsinline poster="/assets/images/qicheng/icon-verification-fallback.jpg">
+                    <source src="/assets/images/qicheng/icon-verification.mp4" type="video/mp4">
+                  </video>
+                </div>
+              </div>
+            </div>
+            <h2 data-i18n="license.verify_title">Verification</h2>
+            <h3 class="qc-gradient-title" data-i18n="license.verify_subtitle">证书查询指引</h3>
+          </header>
+          
+          <div class="qc-card qc-reveal reveal-up" style="max-width: 800px; margin: 0 auto; padding: 3rem;">
+            <ol style="list-style: none; padding: 0; counter-reset: step-counter;">
+              <li style="position: relative; padding-left: 3rem; margin-bottom: 2rem;">
+                <span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: rgba(255,255,255,0.1); color: #fff; border-radius: 50%; text-align: center; line-height: 2rem; font-weight: bold;">1</span>
+                <h4 style="color: #fff; margin-bottom: 0.5rem;" data-i18n="license.step1_title">访问官方系统</h4>
+                <p style="font-size: 0.9rem; color: rgba(255,255,255,0.6);" data-i18n-html="license.step1_desc">
+                  浏览器访问：<a href="https://apps.dos.ny.gov/publicInquiry/" target="_blank" style="color: #fff; text-decoration: underline;">https://apps.dos.ny.gov/publicInquiry/</a>
+                </p>
+              </li>
+              <li style="position: relative; padding-left: 3rem; margin-bottom: 2rem;">
+                <span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: rgba(255,255,255,0.1); color: #fff; border-radius: 50%; text-align: center; line-height: 2rem; font-weight: bold;">2</span>
+                <h4 style="color: #fff; margin-bottom: 0.5rem;" data-i18n="license.step2_title">输入公司名称</h4>
+                <p style="font-size: 0.9rem; color: rgba(255,255,255,0.6);" data-i18n-html="license.step2_desc">
+                  在 Entity Name 输入框中填写：<span class="qc-text-highlight">TXO COMPREHENSIVE SERVICE INC</span>
+                </p>
+              </li>
+              <li style="position: relative; padding-left: 3rem; margin-bottom: 2rem;">
+                <span style="position: absolute; left: 0; top: 0; width: 2rem; height: 2rem; background: rgba(255,255,255,0.1); color: #fff; border-radius: 50%; text-align: center; line-height: 2rem; font-weight: bold;">3</span>
+                <h4 style="color: #fff; margin-bottom: 0.5rem;" data-i18n="license.step3_title">查看结果</h4>
+                <p style="font-size: 0.9rem; color: rgba(255,255,255,0.6);" data-i18n="license.step3_desc">
+                  点击 Search 按钮，查看官方数据库中的注册状态、成立日期等详细信息。
+                </p>
+              </li>
+            </ol>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="qc-footer">
+      <div class="qc-footer-brand" aria-hidden="true">
+        <span class="qc-footer-brand-text">QICHENG</span>
+      </div>
+      <div class="qc-container qc-footer-inner">
+        <div class="qc-footer-grid">
+          <div class="qc-footer-column qc-footer-contact">
+            <div class="qc-footer-logo">
+              <img src="../assets/images/qicheng-logo-wide.png" alt="Qicheng Holdings Group" data-i18n="nav.logo_alt" data-i18n-attr="alt" />
+            </div>
+            <p class="qc-footer-address">
+              全球数字金融与经济系统协作组织
+            </p>
+            <div class="qc-footer-social" aria-label="关键页面" data-i18n="footer.aria_quick_pages" data-i18n-attr="aria-label">
+              <a class="qc-footer-social-icon" href="./txo.html" aria-label="TXO 交易所" title="TXO 交易所" data-i18n="footer.quick.txo" data-i18n-attr="aria-label,title">
+                <img src="../assets/icons/page-txo.svg" alt="TXO 交易所" data-i18n="footer.quick.txo" data-i18n-attr="alt" />
+              </a>
+              <a class="qc-footer-social-icon" href="./business-model.html" aria-label="商业模式" title="商业模式" data-i18n="footer.quick.business" data-i18n-attr="aria-label,title">
+                <img src="../assets/icons/page-business.svg" alt="商业模式" data-i18n="footer.quick.business" data-i18n-attr="alt" />
+              </a>
+              <a class="qc-footer-social-icon" href="./license.html" aria-label="合规与牌照" title="合规与牌照" data-i18n="footer.quick.license" data-i18n-attr="aria-label,title">
+                <img src="../assets/icons/page-license.svg" alt="合规与牌照" data-i18n="footer.quick.license" data-i18n-attr="alt" />
+              </a>
+            </div>
+            <div class="qc-footer-status">
+              <span class="qc-status-indicator"></span>
+              <span data-i18n="footer.status_ok">All systems operational</span>
+            </div>
+          </div>
+
+          <div class="qc-footer-column qc-footer-nav">
+            <h4 data-i18n="footer.about_title">关于启诚</h4>
+            <ul>
+              <li><a href="./about.html" data-i18n="footer.about.overview">机构概览</a></li>
+              <li><a href="./about.html#founder" data-i18n="footer.about.founder">创始人</a></li>
+              <li><a href="./about.html#structure" data-i18n="footer.about.structure">组织结构</a></li>
+              <li><a href="./about.html#qgf" data-i18n="footer.about.qgf">QGF 基金会</a></li>
+              <li><a href="./about.html#mission" data-i18n="footer.about.mission">使命</a></li>
+              <li><a href="./timeline.html" data-i18n="footer.about.timeline">发展历程</a></li>
+              <li><a href="../index.html#testimonials" data-i18n="footer.about.testimonials">用户评价</a></li>
+            </ul>
+          </div>
+
+          <div class="qc-footer-column qc-footer-nav">
+            <h4 data-i18n="footer.txo_title">TXO 交易所</h4>
+            <ul>
+              <li><a href="./txo.html#origin" data-i18n="footer.txo.origin">TXO 的诞生</a></li>
+              <li><a href="./txo.html#founder" data-i18n="footer.txo.founder">创始人</a></li>
+              <li><a href="./txo.html#team" data-i18n="footer.txo.team">研发团队</a></li>
+              <li><a href="./txo.html#offline" data-i18n="footer.txo.offline">线下交易服务</a></li>
+              <li><a href="./license.html#statement" data-i18n="footer.txo.license">合规与牌照</a></li>
+            </ul>
+          </div>
+
+          <div class="qc-footer-column qc-footer-nav">
+            <h4 data-i18n="footer.business_title">商业模式</h4>
+            <ul>
+              <li><a href="./business-model.html#web2" data-i18n="footer.business.web2">WEB2 创新</a></li>
+              <li><a href="./business-model.html#core" data-i18n="footer.business.core">核心模式</a></li>
+              <li><a href="./business-model.html#future" data-i18n="footer.business.future">未来企划</a></li>
+              <li><a href="./business-model.html#v5" data-i18n="footer.business.v5">V5 战略</a></li>
+            </ul>
+          </div>
+
+          <div class="qc-footer-column qc-footer-nav">
+            <h4 data-i18n="footer.profit_title">盈利体系</h4>
+            <ul>
+              <li><a href="./profit.html#signals" data-i18n="footer.profit.signals">交易信号系统</a></li>
+              <li><a href="./profit.html#referral" data-i18n="footer.profit.referral">推荐计划</a></li>
+              <li><a href="./profit.html#vip" data-i18n="footer.profit.vip">VIP 团队计划</a></li>
+              <li><a href="./profit.html#reports" data-i18n="footer.profit.reports">收益报表</a></li>
+              <li><a href="./calculator.html" data-i18n="footer.profit.calculator">收益计算</a></li>
+            </ul>
+          </div>
+
+          <div class="qc-footer-column qc-footer-cta">
+            <h4 data-i18n="footer.cta_title">Ready to Trade?</h4>
+            <a href="https://txoca.com" target="_blank" class="qc-btn-footer-cta" data-i18n="footer.cta_button">立即交易</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var yearEl = document.getElementById("year");
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+        document.querySelectorAll(".qc-submenu a").forEach(function (link) {
+          link.addEventListener("click", function () {
+            var menu = link.closest(".qc-submenu");
+            if (!menu) return;
+            menu.style.opacity = "0";
+            menu.style.transform = "translateY(6px)";
+            menu.style.pointerEvents = "none";
+            setTimeout(function () {
+              menu.style.opacity = "";
+              menu.style.transform = "";
+              menu.style.pointerEvents = "";
+            }, 220);
+          });
+        });
+        // 滚动揭露动画 (Scroll Reveal)
+        var revealCallback = function (entries, observer) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+            } else {
+              // 离开视口时渐隐/消失
+              entry.target.classList.remove("is-visible");
+            }
+          });
+        };
+
+        var revealObserver = new IntersectionObserver(revealCallback, {
+          threshold: 0.1, // 元素出现 10% 时触发
+          rootMargin: "0px 0px -50px 0px"
+        });
+
+        document.querySelectorAll(".qc-reveal, .reveal-btn").forEach(function (el) {
+          revealObserver.observe(el);
+        });
+      });
+    </script>
+    <script src="../assets/js/main.js?v=1.4"></script>
+  </body>
+</html>

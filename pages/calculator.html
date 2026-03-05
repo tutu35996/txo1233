@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      (function () {
+        try {
+          var key = 'qc_lang';
+          var lang = localStorage.getItem(key) || document.documentElement.getAttribute('lang') || 'en';
+          document.documentElement.classList.add('qc-i18n-pending');
+          document.documentElement.setAttribute('lang', lang);
+          document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+        } catch (_) {
+          document.documentElement.classList.add('qc-i18n-pending');
+          document.documentElement.setAttribute('lang', 'en');
+          document.documentElement.setAttribute('dir', 'ltr');
+        }
+      })();
+    </script>
+    <title data-i18n="calc.page_title">收益计算 · Qicheng Holdings Group</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="根据 Qicheng 信号策略，输入初始金额、每天信号次数与周期，在线生成逐日收益表格。"
+      data-i18n="calc.page_desc"
+      data-i18n-attr="content"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png" />
+    <link rel="shortcut icon" type="image/png" href="../assets/images/favicon-32x32.png" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css?v=1.3" />
+  </head>
+  <body class="body qc-page-calculator">
+    <header class="qc-header">
+      <div class="qc-container qc-header-inner">
+        <a class="qc-logo" href="../index.html" aria-label="Qicheng Holdings Group">
+          <img
+            class="qc-logo-mark"
+            src="../assets/images/qicheng-logo-wide.png"
+            alt="Qicheng Holdings Group"
+          />
+        </a>
+        <nav class="qc-nav" aria-label="主导航" data-i18n="nav.aria_main" data-i18n-attr="aria-label">
+          <button class="qc-nav-toggle" aria-label="Toggle navigation" data-i18n="nav.toggle" data-i18n-attr="aria-label">
+            <span class="qc-nav-toggle-icon"></span>
+          </button>
+          <ul class="qc-nav-list">
+            <li class="qc-nav-item">
+              <a href="../index.html" class="qc-nav-link">首页</a>
+            </li>
+            <li class="qc-nav-item qc-has-submenu">
+              <a class="qc-nav-link" href="./about.html">
+                启诚投资
+                <span class="qc-nav-caret">▾</span>
+              </a>
+              <ul class="qc-submenu">
+                <li><a href="./about.html">机构概览</a></li>
+                <li><a href="./about.html#founder">创始人</a></li>
+                <li><a href="./about.html#structure">组织结构</a></li>
+                <li><a href="./about.html#qgf">QGF 基金会</a></li>
+                <li><a href="./about.html#mission">使命</a></li>
+                <li><a href="../index.html#testimonials">用户评价</a></li>
+              </ul>
+            </li>
+            <li class="qc-nav-item qc-has-submenu">
+              <a class="qc-nav-link" href="./business-model.html#web2">
+                商业模式
+                <span class="qc-nav-caret">▾</span>
+              </a>
+              <ul class="qc-submenu">
+                <li><a href="./business-model.html#web2">WEB2 创新</a></li>
+                <li><a href="./business-model.html#core">核心模式</a></li>
+                <li><a href="./business-model.html#future">未来企划</a></li>
+                <li><a href="./business-model.html#v5">V5 战略</a></li>
+              </ul>
+            </li>
+            <li class="qc-nav-item qc-has-submenu">
+              <a class="qc-nav-link" href="./txo.html#origin">
+                TXO 交易所
+                <span class="qc-nav-caret">▾</span>
+              </a>
+              <ul class="qc-submenu">
+                <li><a href="./txo.html#origin">TXO 的诞生</a></li>
+                <li><a href="./txo.html#founder">创始人</a></li>
+                <li><a href="./txo.html#team">研发团队</a></li>
+                <li><a href="./txo.html#offline">线下交易服务</a></li>
+              </ul>
+            </li>
+            <li class="qc-nav-item qc-has-submenu">
+              <a class="qc-nav-link" href="./license.html#statement">
+                合规与牌照
+                <span class="qc-nav-caret">▾</span>
+              </a>
+              <ul class="qc-submenu">
+                <li><a href="./license.html#statement">合法合规声明</a></li>
+                <li><a href="./license.html#verification">证书查询方式</a></li>
+              </ul>
+            </li>
+            <li class="qc-nav-item qc-has-submenu">
+              <a class="qc-nav-link" href="./profit.html#signals">
+                盈利体系
+                <span class="qc-nav-caret">▾</span>
+              </a>
+              <ul class="qc-submenu">
+                <li><a href="./profit.html#signals">交易信号系统</a></li>
+                <li><a href="./profit.html#referral">推荐计划</a></li>
+                <li><a href="./profit.html#vip">VIP 团队计划</a></li>
+                <li><a href="./profit.html#reports">收益示例</a></li>
+              </ul>
+            </li>
+            <li class="qc-nav-item">
+              <a href="./calculator.html" class="qc-nav-link qc-nav-link-active">收益计算</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="qc-about-hero">
+      <div class="qc-container">
+        <h1 class="qc-hero-title qc-reveal reveal-up stagger-1" style="font-size: clamp(3.5rem, 8vw, 6rem);" data-i18n-html="calc.hero_title">财富增值<br>智能模拟</h1>
+        <p class="qc-reveal reveal-up stagger-2">
+          <span data-i18n="calc.hero_desc">基于 Qicheng 信号策略模型，输入您的初始金额与周期，直观预览复利效应带来的资产增长潜力。</span>
+        </p>
+      </div>
+    </section>
+
+    <main class="qc-main">
+      <div class="qc-container">
+        <section class="qc-about-section qc-calculator-section">
+          <div class="qc-grid qc-grid-2 qc-reveal reveal-up qc-calculator-layout">
+            
+            <div class="qc-card qc-calculator-card">
+              <h3 class="qc-calculator-card-title" data-i18n="calc.start_title">开始计算</h3>
+              
+              <div class="qc-form-group qc-calculator-field">
+                <label class="qc-label qc-calculator-label" for="principal" data-i18n="calc.label_principal">初始金额 (USDT)</label>
+                <div class="qc-calculator-input-wrap">
+                  <span class="qc-calculator-prefix">$</span>
+                  <input
+                    id="principal"
+                    class="qc-input qc-calculator-input qc-calculator-input--prefixed"
+                    type="number"
+                    min="0"
+                    step="100"
+                    inputmode="decimal"
+                    placeholder="例如：1000"
+                    data-i18n="calc.placeholder_principal"
+                  />
+                </div>
+              </div>
+
+              <div class="qc-form-group qc-calculator-field">
+                <label class="qc-label qc-calculator-label" for="signalsPerDay" data-i18n="calc.label_signals">每天信号次数</label>
+                <div class="qc-calculator-select-wrap">
+                  <select id="signalsPerDay" class="qc-select qc-calculator-select">
+                    <option value="2" data-i18n="calc.option_signals_2">2 次 / 天 (基础会员)</option>
+                    <option value="3" data-i18n="calc.option_signals_3">3 次 / 天 (荣誉会员)</option>
+                    <option value="4" data-i18n="calc.option_signals_4">4 次 / 天 (团队会员)</option>
+                  </select>
+                  <span class="qc-calculator-select-caret">▼</span>
+                </div>
+              </div>
+
+              <div class="qc-form-group qc-calculator-field">
+                <label class="qc-label qc-calculator-label" for="days" data-i18n="calc.label_days">周期 (天)</label>
+                <input
+                  id="days"
+                  class="qc-input qc-calculator-input"
+                  type="number"
+                  min="1"
+                  max="365"
+                  step="1"
+                  inputmode="numeric"
+                  placeholder="例如：35"
+                  data-i18n="calc.placeholder_days"
+                />
+              </div>
+
+              <div class="qc-calculator-actions">
+                <button id="calcBtn" class="qc-btn qc-btn-primary qc-calculator-submit" type="button" data-i18n="calc.submit">生成收益预览</button>
+                <div id="calcError" class="qc-calculator-error" style="display:none;"></div>
+              </div>
+            </div>
+
+            <div class="qc-calculator-side">
+              <div id="introText">
+                <div class="qc-calculator-intro">
+                  <h3 class="qc-gradient-title qc-calculator-intro-title" data-i18n="calc.compound_title">复利的本质与优势</h3>
+
+                  <details class="qc-accordion" open>
+                    <summary class="qc-accordion-summary" data-i18n="calc.acc_core">核心概念</summary>
+                    <div class="qc-accordion-panel">
+                      <p class="qc-calculator-intro-paragraph" data-i18n="calc.core_paragraph">复利的核心不是“单次赚得更多”，而是让收益在时间维度上被持续再投资：每一轮增长都会成为下一轮增长的基数。关键变量只有两个：增长幅度与执行次数。</p>
+                    </div>
+                  </details>
+
+                  <details class="qc-accordion" open>
+                    <summary class="qc-accordion-summary" data-i18n="calc.acc_formula">模型公式</summary>
+                    <div class="qc-accordion-panel">
+                      <div class="qc-card qc-compound-note qc-calculator-compound-note">
+                        <div class="qc-compound-note-line">
+                          <span class="qc-compound-note-label" data-i18n="calc.formula_model_label">模型</span>
+                          <span class="qc-compound-note-formula" data-i18n-html="calc.formula_line">期末 = 本金 × (1 + Δ)<sup>n</sup></span>
+                        </div>
+                        <div class="qc-compound-note-sub" data-i18n="calc.formula_sub">Δ 为单次信号等效增长，n 为总信号次数（每日信号 × 天数）。</div>
+                      </div>
+                    </div>
+                  </details>
+
+                  <details class="qc-accordion" open>
+                    <summary class="qc-accordion-summary" data-i18n="calc.acc_adv">优势拆解</summary>
+                    <div class="qc-accordion-panel">
+                      <div class="qc-calculator-adv-list">
+                        <div class="qc-calculator-adv-item">
+                          <div class="qc-calculator-adv-head">
+                            <i class="ri-file-list-3-line qc-calculator-adv-icon" aria-hidden="true"></i>
+                            <h4 class="qc-calculator-adv-title" data-i18n="calc.adv_1_title">纪律与可复制</h4>
+                          </div>
+                          <p class="qc-calculator-adv-desc" data-i18n="calc.adv_1_desc">固定仓位与固定规则，降低情绪干扰，让策略在不同周期可复现。</p>
+                        </div>
+                        <div class="qc-calculator-adv-item">
+                          <div class="qc-calculator-adv-head">
+                            <i class="ri-speed-up-line qc-calculator-adv-icon" aria-hidden="true"></i>
+                            <h4 class="qc-calculator-adv-title" data-i18n="calc.adv_2_title">频次放大效应</h4>
+                          </div>
+                          <p class="qc-calculator-adv-desc" data-i18n="calc.adv_2_desc">相同的增长幅度下，频次越高，指数曲线越早拐头，越快进入加速区。</p>
+                        </div>
+                        <div class="qc-calculator-adv-item">
+                          <div class="qc-calculator-adv-head">
+                            <i class="ri-shield-check-line qc-calculator-adv-icon" aria-hidden="true"></i>
+                            <h4 class="qc-calculator-adv-title" data-i18n="calc.adv_3_title">风险可控前提</h4>
+                          </div>
+                          <p class="qc-calculator-adv-desc" data-i18n="calc.adv_3_desc">每次仅使用账户余额的一小部分参与交易，使单次波动对整体影响可控。</p>
+                        </div>
+                      </div>
+                    </div>
+                  </details>
+
+                  <details class="qc-accordion qc-calculator-org">
+                    <summary class="qc-accordion-summary" data-i18n="calc.acc_org">团队组织架构</summary>
+                    <div class="qc-accordion-panel">
+                      <div class="qc-agent-framework qc-calculator-agent-framework">
+                        <div class="qc-agent-header">
+                          <h4 class="qc-agent-title" data-i18n="calc.org_title">团队组织架构</h4>
+                          <div class="qc-agent-subtitle" data-i18n="calc.org_subtitle">以“6 个直接推荐”为基础构建的晋升体系</div>
+                        </div>
+
+                        <div class="qc-tree">
+                          <ul>
+                            <li>
+                                <div class="qc-tree-node captain">
+                                  <div class="qc-tree-avatar"><i class="ri-user-star-line"></i></div>
+                                  <div>
+                                  <div class="qc-tree-title" data-i18n="calc.org_captain_title">队长 (VIP)</div>
+                                  <div class="qc-tree-desc" data-i18n="calc.org_captain_desc">享受团队晋升福利</div>
+                                  </div>
+                                </div>
+                              <ul>
+                                <li>
+                                  <div class="qc-tree-node member">
+                                    <div class="qc-tree-avatar" style="width: 32px; height: 32px; font-size: 0.9rem;">A1</div>
+                                    <div class="qc-tree-title" style="font-size: 0.8rem;" data-i18n="calc.org_level1_user">一级用户</div>
+                                  </div>
+                                  <ul>
+                                    <li><div class="qc-tree-node sub">B1</div></li>
+                                    <li><div class="qc-tree-node sub">B2</div></li>
+                                    <li><div class="qc-tree-node sub">B3</div></li>
+                                    <li><div class="qc-tree-node sub">B4</div></li>
+                                    <li><div class="qc-tree-node sub">B5</div></li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <div class="qc-tree-node member">
+                                    <div class="qc-tree-avatar" style="width: 32px; height: 32px; font-size: 0.9rem;">A2</div>
+                                    <div class="qc-tree-title" style="font-size: 0.8rem;" data-i18n="calc.org_level1_user">一级用户</div>
+                                  </div>
+                                  <ul>
+                                    <li><div class="qc-tree-node sub">B1</div></li>
+                                    <li><div class="qc-tree-node sub">B2</div></li>
+                                    <li><div class="qc-tree-node sub">B3</div></li>
+                                    <li><div class="qc-tree-node sub">B4</div></li>
+                                    <li><div class="qc-tree-node sub">B5</div></li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <div class="qc-tree-node member">
+                                    <div class="qc-tree-avatar" style="width: 32px; height: 32px; font-size: 0.9rem;">A3</div>
+                                    <div class="qc-tree-title" style="font-size: 0.8rem;" data-i18n="calc.org_level1_user">一级用户</div>
+                                  </div>
+                                  <ul>
+                                    <li><div class="qc-tree-node sub">B1</div></li>
+                                    <li><div class="qc-tree-node sub">B2</div></li>
+                                    <li><div class="qc-tree-node sub">B3</div></li>
+                                    <li><div class="qc-tree-node sub">B4</div></li>
+                                    <li><div class="qc-tree-node sub">B5</div></li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <div class="qc-tree-node member">
+                                    <div class="qc-tree-avatar" style="width: 32px; height: 32px; font-size: 0.9rem;">A4</div>
+                                    <div class="qc-tree-title" style="font-size: 0.8rem;" data-i18n="calc.org_level1_user">一级用户</div>
+                                  </div>
+                                  <ul>
+                                    <li><div class="qc-tree-node sub">B1</div></li>
+                                    <li><div class="qc-tree-node sub">B2</div></li>
+                                    <li><div class="qc-tree-node sub">B3</div></li>
+                                    <li><div class="qc-tree-node sub">B4</div></li>
+                                    <li><div class="qc-tree-node sub">B5</div></li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <div class="qc-tree-node member">
+                                    <div class="qc-tree-avatar" style="width: 32px; height: 32px; font-size: 0.9rem;">A5</div>
+                                    <div class="qc-tree-title" style="font-size: 0.8rem;" data-i18n="calc.org_level1_user">一级用户</div>
+                                  </div>
+                                  <ul>
+                                    <li><div class="qc-tree-node sub">B1</div></li>
+                                    <li><div class="qc-tree-node sub">B2</div></li>
+                                    <li><div class="qc-tree-node sub">B3</div></li>
+                                    <li><div class="qc-tree-node sub">B4</div></li>
+                                    <li><div class="qc-tree-node sub">B5</div></li>
+                                  </ul>
+                                </li>
+                                <li>
+                                  <div class="qc-tree-node member">
+                                    <div class="qc-tree-avatar" style="width: 32px; height: 32px; font-size: 0.9rem;">A6</div>
+                                    <div class="qc-tree-title" style="font-size: 0.8rem;" data-i18n="calc.org_level1_user">一级用户</div>
+                                  </div>
+                                  <ul>
+                                    <li><div class="qc-tree-node sub">B1</div></li>
+                                    <li><div class="qc-tree-node sub">B2</div></li>
+                                    <li><div class="qc-tree-node sub">B3</div></li>
+                                    <li><div class="qc-tree-node sub">B4</div></li>
+                                    <li><div class="qc-tree-node sub">B5</div></li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </details>
+                </div>
+              </div>
+
+              <div id="resultSummary" class="qc-calculator-summary" style="display: none;">
+                <h4 class="qc-calculator-summary-title" data-i18n="calc.summary_title">预估期末总资产</h4>
+                <div id="finalAmountDisplay" class="qc-calculator-summary-amount">$0.00</div>
+                <p id="totalProfitDisplay" class="qc-calculator-summary-profit">+ $0.00 <span data-i18n="calc.profit_suffix">(收益)</span></p>
+                <p id="summaryDetails" class="qc-calculator-summary-details"></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="qc-section-block" id="tableSection" style="display: none; padding-bottom: 6rem;">
+          <h3 style="text-align: center; margin-bottom: 2rem; color: #fff;" data-i18n="calc.table_title">逐日收益明细</h3>
+          <div class="qc-table-wrap" style="max-width: 1000px; margin: 0 auto; background: rgba(255,255,255,0.02); border-radius: 1rem; padding: 1rem; border: 1px solid rgba(255,255,255,0.05); max-height: 600px; overflow-y: auto;">
+            <table class="qc-table qc-table-compact" style="width: 100%;">
+              <thead style="position: sticky; top: 0; background: #06050a; z-index: 10;">
+                <tr>
+                  <th style="padding: 1rem;" data-i18n="calc.th_day">天数</th>
+                  <th style="padding: 1rem;" data-i18n="calc.th_signals">当日信号</th>
+                  <th style="padding: 1rem;" data-i18n="calc.th_start">期初余额</th>
+                  <th style="padding: 1rem;" data-i18n="calc.th_profit">当日收益</th>
+                  <th style="padding: 1rem;" data-i18n="calc.th_end">期末余额</th>
+                </tr>
+              </thead>
+              <tbody id="calcTableBody"></tbody>
+            </table>
+          </div>
+          <p style="text-align: center; margin-top: 1.5rem; font-size: 0.85rem; color: rgba(255,255,255,0.4);" data-i18n="calc.disclaimer">* 声明：以上数据仅基于理论模型计算，不代表实际投资承诺。市场有风险，投资需谨慎。</p>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      function calculateDailyTable(principal, signalsPerDay, days) {
+        var factorPerSignal = 1 + 0.02 * 0.5; // 每次信号约增加 1%
+        var factorPerDay = Math.pow(factorPerSignal, signalsPerDay);
+        var rows = [];
+        var balance = principal;
+
+        for (var day = 1; day <= days; day++) {
+          var start = balance;
+          var end = start * factorPerDay;
+          var profit = end - start;
+          rows.push({
+            day: day,
+            signals: signalsPerDay,
+            start: start,
+            profit: profit,
+            end: end,
+          });
+          balance = end;
+        }
+
+        return rows;
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        var yearEl = document.getElementById("year");
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+        document.querySelectorAll(".qc-submenu a").forEach(function (link) {
+          link.addEventListener("click", function () {
+            var menu = link.closest(".qc-submenu");
+            if (!menu) return;
+            menu.style.opacity = "0";
+            menu.style.transform = "translateY(6px)";
+            menu.style.pointerEvents = "none";
+            setTimeout(function () {
+              menu.style.opacity = "";
+              menu.style.transform = "";
+              menu.style.pointerEvents = "";
+            }, 220);
+          });
+        });
+
+        var calcBtn = document.getElementById("calcBtn");
+        var tableSection = document.getElementById("tableSection");
+        var tbody = document.getElementById("calcTableBody");
+        var errorEl = document.getElementById("calcError");
+
+        calcBtn.addEventListener("click", function () {
+          var t = window.QC_I18N && window.QC_I18N.t ? window.QC_I18N.t : function (k) { return k; };
+          var principal = parseFloat(document.getElementById("principal").value || "0");
+          var signalsPerDay = parseInt(
+            document.getElementById("signalsPerDay").value || "2",
+            10
+          );
+          var days = parseInt(document.getElementById("days").value || "0", 10);
+
+          if (!principal || principal <= 0 || !days || days <= 0) {
+            if (errorEl) {
+              errorEl.textContent = t('calc.error_invalid');
+              errorEl.style.display = "block";
+            }
+            return;
+          }
+
+          if (errorEl) {
+            errorEl.textContent = "";
+            errorEl.style.display = "none";
+          }
+
+          var rows = calculateDailyTable(principal, signalsPerDay, days);
+          tbody.innerHTML = "";
+
+          rows.forEach(function (row) {
+            var tr = document.createElement("tr");
+            tr.innerHTML =
+              "<td>" +
+              row.day +
+              "</td>" +
+              "<td>" +
+              row.signals +
+              "</td>" +
+              "<td>$" +
+              row.start.toFixed(2) +
+              "</td>" +
+              "<td>$" +
+              row.profit.toFixed(2) +
+              "</td>" +
+              "<td>$" +
+              row.end.toFixed(2) +
+              "</td>";
+            tbody.appendChild(tr);
+          });
+
+          var last = rows[rows.length - 1];
+          var totalProfit = last.end - principal;
+          var profitSuffix = t('calc.profit_suffix');
+          
+          // 更新结果摘要
+          document.getElementById("finalAmountDisplay").textContent = "$" + last.end.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
+          document.getElementById("totalProfitDisplay").textContent = "+ $" + totalProfit.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2}) + " " + profitSuffix;
+          document.getElementById("summaryDetails").innerHTML = 
+            t('calc.summary_details', { days: '<strong>' + days + '</strong>', signals: '<strong>' + (days * signalsPerDay) + '</strong>' });
+
+          // 切换显示
+          document.getElementById("introText").style.display = "none";
+          document.getElementById("resultSummary").style.display = "block";
+          document.getElementById("resultSummary").classList.add("qc-reveal", "reveal-up", "is-visible");
+
+          tableSection.style.display = "block";
+        });
+        // 滚动揭露动画 (Scroll Reveal)
+        var revealCallback = function (entries, observer) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+            } else {
+              // 离开视口时渐隐/消失
+              entry.target.classList.remove("is-visible");
+            }
+          });
+        };
+
+        var revealObserver = new IntersectionObserver(revealCallback, {
+          threshold: 0.1, // 元素出现 10% 时触发
+          rootMargin: "0px 0px -50px 0px"
+        });
+
+        document.querySelectorAll(".qc-reveal, .reveal-btn").forEach(function (el) {
+          revealObserver.observe(el);
+        });
+      });
+    </script>
+
+    <footer class="qc-footer">
+      <div class="qc-footer-brand" aria-hidden="true">
+        <span class="qc-footer-brand-text">QICHENG</span>
+      </div>
+      <div class="qc-container qc-footer-inner">
+        <div class="qc-footer-grid">
+          <div class="qc-footer-column qc-footer-contact">
+            <div class="qc-footer-logo">
+              <img src="../assets/images/qicheng-logo-wide.png" alt="Qicheng Holdings Group" />
+            </div>
+            <p class="qc-footer-address">
+              <span data-i18n="footer.tagline">全球数字金融与经济系统协作组织</span>
+            </p>
+            <div class="qc-footer-social" aria-label="关键页面" data-i18n="footer.aria_quick_pages" data-i18n-attr="aria-label">
+              <a class="qc-footer-social-icon" href="./txo.html" aria-label="TXO 交易所" title="TXO 交易所" data-i18n="footer.quick.txo" data-i18n-attr="aria-label,title">
+                <img src="../assets/icons/page-txo.svg" alt="TXO 交易所" data-i18n="footer.quick.txo" data-i18n-attr="alt" />
+              </a>
+              <a class="qc-footer-social-icon" href="./business-model.html" aria-label="商业模式" title="商业模式" data-i18n="footer.quick.business" data-i18n-attr="aria-label,title">
+                <img src="../assets/icons/page-business.svg" alt="商业模式" data-i18n="footer.quick.business" data-i18n-attr="alt" />
+              </a>
+              <a class="qc-footer-social-icon" href="./license.html" aria-label="合规与牌照" title="合规与牌照" data-i18n="footer.quick.license" data-i18n-attr="aria-label,title">
+                <img src="../assets/icons/page-license.svg" alt="合规与牌照" data-i18n="footer.quick.license" data-i18n-attr="alt" />
+              </a>
+            </div>
+            <div class="qc-footer-status">
+              <span class="qc-status-indicator"></span>
+              <span data-i18n="footer.status_ok">All systems operational</span>
+            </div>
+          </div>
+
+          <div class="qc-footer-column qc-footer-nav">
+            <h4>关于启诚</h4>
+            <ul>
+              <li><a href="./about.html">机构概览</a></li>
+              <li><a href="./about.html#founder">创始人</a></li>
+              <li><a href="./about.html#structure">组织结构</a></li>
+              <li><a href="./about.html#qgf">QGF 基金会</a></li>
+              <li><a href="./about.html#mission">使命</a></li>
+              <li><a href="./timeline.html">发展历程</a></li>
+              <li><a href="../index.html#testimonials">用户评价</a></li>
+            </ul>
+          </div>
+
+          <div class="qc-footer-column qc-footer-nav">
+            <h4>TXO 交易所</h4>
+            <ul>
+              <li><a href="./txo.html#origin">TXO 的诞生</a></li>
+              <li><a href="./txo.html#founder">创始人</a></li>
+              <li><a href="./txo.html#team">研发团队</a></li>
+              <li><a href="./txo.html#offline">线下交易服务</a></li>
+              <li><a href="./license.html#statement">合规与牌照</a></li>
+            </ul>
+          </div>
+
+          <div class="qc-footer-column qc-footer-nav">
+            <h4>商业模式</h4>
+            <ul>
+              <li><a href="./business-model.html#web2">WEB2 创新</a></li>
+              <li><a href="./business-model.html#core">核心模式</a></li>
+              <li><a href="./business-model.html#future">未来企划</a></li>
+              <li><a href="./business-model.html#v5">V5 战略</a></li>
+            </ul>
+          </div>
+
+          <div class="qc-footer-column qc-footer-nav">
+            <h4>盈利体系</h4>
+            <ul>
+              <li><a href="./profit.html#signals">交易信号系统</a></li>
+              <li><a href="./profit.html#referral">推荐计划</a></li>
+              <li><a href="./profit.html#vip">VIP 团队计划</a></li>
+              <li><a href="./profit.html#reports">收益报表</a></li>
+              <li><a href="./calculator.html">收益计算</a></li>
+            </ul>
+          </div>
+
+          <div class="qc-footer-column qc-footer-cta">
+            <h4 data-i18n="footer.cta_title">Ready to Trade?</h4>
+            <a href="https://txoca.com" target="_blank" class="qc-btn-footer-cta" data-i18n="footer.cta_button">立即交易</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../assets/js/main.js?v=1.4"></script>
+  </body>
+</html>

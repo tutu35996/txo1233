@@ -1,0 +1,1527 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      (function () {
+        try {
+          var key = 'qc_lang';
+          var lang = localStorage.getItem(key) || document.documentElement.getAttribute('lang') || 'en';
+          document.documentElement.classList.add('qc-i18n-pending');
+          document.documentElement.setAttribute('lang', lang);
+          document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+        } catch (_) {
+          document.documentElement.classList.add('qc-i18n-pending');
+          document.documentElement.setAttribute('lang', 'en');
+          document.documentElement.setAttribute('dir', 'ltr');
+        }
+      })();
+    </script>
+    <title>Qicheng Holdings Group · 全球数字金融与经济系统协作组织</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Qicheng Holdings Group 立足伦敦，构建全球数字金融与经济系统协作网络，推动数字经济与实体经济的深度融合。"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./assets/css/styles.css?v=1.3" />
+  </head>
+  <body class="body">
+    <header class="qc-header">
+      <div class="qc-container qc-header-inner">
+        <a class="qc-logo" href="./index.html" aria-label="Qicheng Holdings Group">
+          <img
+            class="qc-logo-mark"
+            src="./assets/images/qicheng-logo-wide.png"
+            alt="Qicheng Holdings Group"
+          />
+        </a>
+        <nav class="qc-nav" aria-label="主导航">
+          <button class="qc-nav-toggle" aria-label="Toggle navigation">
+            <span class="qc-nav-toggle-icon"></span>
+          </button>
+          <ul class="qc-nav-list">
+            <li class="qc-nav-item">
+              <a href="./index.html" class="qc-nav-link qc-nav-link-active">首页</a>
+            </li>
+            <li class="qc-nav-item qc-has-submenu">
+              <a class="qc-nav-link" href="./pages/about.html">
+                启诚投资
+                <span class="qc-nav-caret">▾</span>
+              </a>
+              <ul class="qc-submenu">
+                <li><a href="./pages/about.html">机构概览</a></li>
+                <li><a href="./pages/about.html#founder">创始人</a></li>
+                <li><a href="./pages/about.html#structure">组织结构</a></li>
+                <li><a href="./pages/about.html#qgf">QGF 基金会</a></li>
+                <li><a href="./pages/about.html#mission">使命</a></li>
+                <li><a href="#testimonials">用户评价</a></li>
+              </ul>
+            </li>
+            <li class="qc-nav-item qc-has-submenu">
+              <a class="qc-nav-link" href="./pages/business-model.html#web2">
+                商业模式
+                <span class="qc-nav-caret">▾</span>
+              </a>
+              <ul class="qc-submenu">
+                <li><a href="./pages/business-model.html#web2">WEB2 创新</a></li>
+                <li><a href="./pages/business-model.html#core">核心模式</a></li>
+                <li><a href="./pages/business-model.html#future">未来企划</a></li>
+                <li><a href="./pages/business-model.html#v5">V5 战略</a></li>
+              </ul>
+            </li>
+            <li class="qc-nav-item qc-has-submenu">
+              <a class="qc-nav-link" href="./pages/txo.html#origin">
+                TXO 交易所
+                <span class="qc-nav-caret">▾</span>
+              </a>
+              <ul class="qc-submenu">
+                <li><a href="./pages/txo.html#origin">TXO 的诞生</a></li>
+                <li><a href="./pages/txo.html#founder">创始人</a></li>
+                <li><a href="./pages/txo.html#team">研发团队</a></li>
+                <li><a href="./pages/txo.html#offline">线下交易服务</a></li>
+              </ul>
+            </li>
+            <li class="qc-nav-item qc-has-submenu">
+              <a class="qc-nav-link" href="./pages/license.html#statement">
+                合规与牌照
+                <span class="qc-nav-caret">▾</span>
+              </a>
+              <ul class="qc-submenu">
+                <li><a href="./pages/license.html#statement">合法合规声明</a></li>
+                <li><a href="./pages/license.html#verification">证书查询方式</a></li>
+              </ul>
+            </li>
+            <li class="qc-nav-item qc-has-submenu">
+              <a class="qc-nav-link" href="./pages/profit.html#signals">
+                盈利体系
+                <span class="qc-nav-caret">▾</span>
+              </a>
+              <ul class="qc-submenu">
+                <li><a href="./pages/profit.html#signals">交易信号系统</a></li>
+                <li><a href="./pages/profit.html#referral">推荐计划</a></li>
+                <li><a href="./pages/profit.html#vip">VIP 团队计划</a></li>
+                <li><a href="./pages/profit.html#reports">收益报表</a></li>
+              </ul>
+            </li>
+            <li class="qc-nav-item">
+              <a href="./pages/calculator.html" class="qc-nav-link">收益计算</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="qc-hero">
+      <div class="qc-hero-bg"></div>
+
+      <div class="qc-container qc-hero-inner">
+        <div class="qc-hero-content">
+          <p class="qc-hero-kicker qc-reveal reveal-up" data-i18n="home.hero_kicker">Qicheng Holdings Group</p>
+          <h1 class="qc-hero-title qc-reveal reveal-up" data-i18n="home.hero_title">全球数字金融与经济系统协作组织</h1>
+          <p class="qc-hero-subtitle qc-reveal reveal-up stagger-1">
+            <span data-i18n-html="home.hero_subtitle">立足伦敦，构建覆盖 30+ 国家的数字经济协作网络，以透明、安全、创新为核心，推动数字金融与实体经济深度融合。</span>
+          </p>
+          <div class="qc-hero-actions qc-reveal reveal-up stagger-2">
+            <a href="./pages/business-model.html" class="qc-btn qc-btn-primary reveal-btn" data-i18n="home.hero_cta_business">了解商业模式</a>
+            <a href="./pages/txo.html" class="qc-btn qc-btn-secondary reveal-btn" data-i18n="home.hero_cta_txo">进入 TXO 交易所</a>
+          </div>
+        </div>
+        <div class="qc-hero-cube qc-reveal reveal-right stagger-2">
+          <video class="qc-cube-video" src="./assets/videos/cube.mp4" autoplay muted loop playsinline></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="qc-section qc-section-london">
+      <div class="qc-container">
+        <header class="qc-section-header">
+          <div class="qc-section-video qc-reveal reveal-scale">
+            <video src="./assets/videos/3d-control.mp4" autoplay muted loop playsinline width="220" height="220"></video>
+          </div>
+          <h2 class="qc-reveal reveal-up" data-i18n="home.london_title">立足伦敦 · 布局全球</h2>
+          <p class="qc-reveal reveal-up stagger-1">
+            <span data-i18n="home.london_desc">Qicheng Holdings Group（QCH）成立于 2020 年，总部位于英国伦敦，在成熟且监管完善的金融环境中，
+            构建面向未来的全球数字经济基础设施。</span>
+          </p>
+          <div class="qc-hero-actions qc-reveal reveal-up stagger-2" style="justify-content: center;">
+            <a href="./pages/about.html" class="qc-btn qc-btn-primary reveal-btn" data-i18n="home.london_cta_about">关于启诚投资</a>
+          </div>
+        </header>
+        <div class="qc-image-carousel qc-reveal reveal-up stagger-2">
+          <button class="qc-carousel-btn qc-carousel-btn-prev" aria-label="上一张">‹</button>
+          <div class="qc-carousel-container">
+            <div class="qc-carousel-item" data-index="0">
+              <img src="./assets/images/carousel-1.jpg" alt="Image 1" />
+            </div>
+            <div class="qc-carousel-item" data-index="1">
+              <img src="./assets/images/carousel-2.jpg" alt="Image 2" />
+            </div>
+            <div class="qc-carousel-item" data-index="2">
+              <img src="./assets/images/carousel-3.jpg" alt="Image 3" />
+            </div>
+            <div class="qc-carousel-item qc-carousel-active" data-index="3">
+              <img src="./assets/images/carousel-4.jpg" alt="Image 4" />
+            </div>
+            <div class="qc-carousel-item" data-index="4">
+              <img src="./assets/images/carousel-5.jpg" alt="Image 5" />
+            </div>
+            <div class="qc-carousel-item" data-index="5">
+              <img src="./assets/images/carousel-6.jpg" alt="Image 6" />
+            </div>
+            <div class="qc-carousel-item" data-index="6">
+              <img src="./assets/images/carousel-7.jpg" alt="Image 7" />
+            </div>
+          </div>
+          <button class="qc-carousel-btn qc-carousel-btn-next" aria-label="下一张">›</button>
+        </div>
+        
+        <div class="qc-flags-section">
+          <div class="qc-flags-row qc-flags-row-left">
+            <div class="qc-flags-track">
+              <div class="qc-flag-item" data-country="US">
+                <img src="https://flagcdn.com/w160/us.png" alt="United States" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="GB">
+                <img src="https://flagcdn.com/w160/gb.png" alt="United Kingdom" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="CN">
+                <img src="https://flagcdn.com/w160/cn.png" alt="China" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="JP">
+                <img src="https://flagcdn.com/w160/jp.png" alt="Japan" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="DE">
+                <img src="https://flagcdn.com/w160/de.png" alt="Germany" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="FR">
+                <img src="https://flagcdn.com/w160/fr.png" alt="France" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="CA">
+                <img src="https://flagcdn.com/w160/ca.png" alt="Canada" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="AU">
+                <img src="https://flagcdn.com/w160/au.png" alt="Australia" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="SG">
+                <img src="https://flagcdn.com/w160/sg.png" alt="Singapore" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="CH">
+                <img src="https://flagcdn.com/w160/ch.png" alt="Switzerland" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="NL">
+                <img src="https://flagcdn.com/w160/nl.png" alt="Netherlands" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="SE">
+                <img src="https://flagcdn.com/w160/se.png" alt="Sweden" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="RU">
+                <img src="https://flagcdn.com/w160/ru.png" alt="Russia" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="ID">
+                <img src="https://flagcdn.com/w160/id.png" alt="Indonesia" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="TH">
+                <img src="https://flagcdn.com/w160/th.png" alt="Thailand" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="MY">
+                <img src="https://flagcdn.com/w160/my.png" alt="Malaysia" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="PH">
+                <img src="https://flagcdn.com/w160/ph.png" alt="Philippines" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="VN">
+                <img src="https://flagcdn.com/w160/vn.png" alt="Vietnam" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="TR">
+                <img src="https://flagcdn.com/w160/tr.png" alt="Turkey" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="SA">
+                <img src="https://flagcdn.com/w160/sa.png" alt="Saudi Arabia" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="IL">
+                <img src="https://flagcdn.com/w160/il.png" alt="Israel" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="PL">
+                <img src="https://flagcdn.com/w160/pl.png" alt="Poland" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="BE">
+                <img src="https://flagcdn.com/w160/be.png" alt="Belgium" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="AT">
+                <img src="https://flagcdn.com/w160/at.png" alt="Austria" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="PT">
+                <img src="https://flagcdn.com/w160/pt.png" alt="Portugal" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="GR">
+                <img src="https://flagcdn.com/w160/gr.png" alt="Greece" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="IE">
+                <img src="https://flagcdn.com/w160/ie.png" alt="Ireland" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="LU">
+                <img src="https://flagcdn.com/w160/lu.png" alt="Luxembourg" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="US">
+                <img src="https://flagcdn.com/w160/us.png" alt="United States" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="GB">
+                <img src="https://flagcdn.com/w160/gb.png" alt="United Kingdom" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="CN">
+                <img src="https://flagcdn.com/w160/cn.png" alt="China" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="JP">
+                <img src="https://flagcdn.com/w160/jp.png" alt="Japan" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="DE">
+                <img src="https://flagcdn.com/w160/de.png" alt="Germany" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="FR">
+                <img src="https://flagcdn.com/w160/fr.png" alt="France" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="CA">
+                <img src="https://flagcdn.com/w160/ca.png" alt="Canada" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="AU">
+                <img src="https://flagcdn.com/w160/au.png" alt="Australia" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="SG">
+                <img src="https://flagcdn.com/w160/sg.png" alt="Singapore" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="CH">
+                <img src="https://flagcdn.com/w160/ch.png" alt="Switzerland" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="NL">
+                <img src="https://flagcdn.com/w160/nl.png" alt="Netherlands" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="SE">
+                <img src="https://flagcdn.com/w160/se.png" alt="Sweden" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="RU">
+                <img src="https://flagcdn.com/w160/ru.png" alt="Russia" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="ID">
+                <img src="https://flagcdn.com/w160/id.png" alt="Indonesia" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="TH">
+                <img src="https://flagcdn.com/w160/th.png" alt="Thailand" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="MY">
+                <img src="https://flagcdn.com/w160/my.png" alt="Malaysia" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="PH">
+                <img src="https://flagcdn.com/w160/ph.png" alt="Philippines" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="VN">
+                <img src="https://flagcdn.com/w160/vn.png" alt="Vietnam" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="TR">
+                <img src="https://flagcdn.com/w160/tr.png" alt="Turkey" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="SA">
+                <img src="https://flagcdn.com/w160/sa.png" alt="Saudi Arabia" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="IL">
+                <img src="https://flagcdn.com/w160/il.png" alt="Israel" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="PL">
+                <img src="https://flagcdn.com/w160/pl.png" alt="Poland" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="BE">
+                <img src="https://flagcdn.com/w160/be.png" alt="Belgium" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="AT">
+                <img src="https://flagcdn.com/w160/at.png" alt="Austria" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="PT">
+                <img src="https://flagcdn.com/w160/pt.png" alt="Portugal" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="GR">
+                <img src="https://flagcdn.com/w160/gr.png" alt="Greece" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="IE">
+                <img src="https://flagcdn.com/w160/ie.png" alt="Ireland" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="LU">
+                <img src="https://flagcdn.com/w160/lu.png" alt="Luxembourg" class="qc-flag-icon" />
+              </div>
+            </div>
+          </div>
+          
+          <div class="qc-flags-row qc-flags-row-right">
+            <div class="qc-flags-track">
+              <div class="qc-flag-item" data-country="KR">
+                <img src="https://flagcdn.com/w160/kr.png" alt="South Korea" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="IN">
+                <img src="https://flagcdn.com/w160/in.png" alt="India" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="BR">
+                <img src="https://flagcdn.com/w160/br.png" alt="Brazil" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="MX">
+                <img src="https://flagcdn.com/w160/mx.png" alt="Mexico" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="IT">
+                <img src="https://flagcdn.com/w160/it.png" alt="Italy" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="ES">
+                <img src="https://flagcdn.com/w160/es.png" alt="Spain" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="AE">
+                <img src="https://flagcdn.com/w160/ae.png" alt="United Arab Emirates" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="HK">
+                <img src="https://flagcdn.com/w160/hk.png" alt="Hong Kong" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="NZ">
+                <img src="https://flagcdn.com/w160/nz.png" alt="New Zealand" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="NO">
+                <img src="https://flagcdn.com/w160/no.png" alt="Norway" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="DK">
+                <img src="https://flagcdn.com/w160/dk.png" alt="Denmark" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="FI">
+                <img src="https://flagcdn.com/w160/fi.png" alt="Finland" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="AR">
+                <img src="https://flagcdn.com/w160/ar.png" alt="Argentina" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="CL">
+                <img src="https://flagcdn.com/w160/cl.png" alt="Chile" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="CO">
+                <img src="https://flagcdn.com/w160/co.png" alt="Colombia" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="ZA">
+                <img src="https://flagcdn.com/w160/za.png" alt="South Africa" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="EG">
+                <img src="https://flagcdn.com/w160/eg.png" alt="Egypt" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="NG">
+                <img src="https://flagcdn.com/w160/ng.png" alt="Nigeria" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="KE">
+                <img src="https://flagcdn.com/w160/ke.png" alt="Kenya" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="TW">
+                <img src="https://flagcdn.com/w160/tw.png" alt="Taiwan" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="BD">
+                <img src="https://flagcdn.com/w160/bd.png" alt="Bangladesh" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="PK">
+                <img src="https://flagcdn.com/w160/pk.png" alt="Pakistan" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="CZ">
+                <img src="https://flagcdn.com/w160/cz.png" alt="Czech Republic" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="HU">
+                <img src="https://flagcdn.com/w160/hu.png" alt="Hungary" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="RO">
+                <img src="https://flagcdn.com/w160/ro.png" alt="Romania" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="BG">
+                <img src="https://flagcdn.com/w160/bg.png" alt="Bulgaria" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="HR">
+                <img src="https://flagcdn.com/w160/hr.png" alt="Croatia" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="IS">
+                <img src="https://flagcdn.com/w160/is.png" alt="Iceland" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="KR">
+                <img src="https://flagcdn.com/w160/kr.png" alt="South Korea" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="IN">
+                <img src="https://flagcdn.com/w160/in.png" alt="India" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="BR">
+                <img src="https://flagcdn.com/w160/br.png" alt="Brazil" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="MX">
+                <img src="https://flagcdn.com/w160/mx.png" alt="Mexico" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="IT">
+                <img src="https://flagcdn.com/w160/it.png" alt="Italy" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="ES">
+                <img src="https://flagcdn.com/w160/es.png" alt="Spain" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="AE">
+                <img src="https://flagcdn.com/w160/ae.png" alt="United Arab Emirates" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="HK">
+                <img src="https://flagcdn.com/w160/hk.png" alt="Hong Kong" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="NZ">
+                <img src="https://flagcdn.com/w160/nz.png" alt="New Zealand" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="NO">
+                <img src="https://flagcdn.com/w160/no.png" alt="Norway" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="DK">
+                <img src="https://flagcdn.com/w160/dk.png" alt="Denmark" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="FI">
+                <img src="https://flagcdn.com/w160/fi.png" alt="Finland" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="AR">
+                <img src="https://flagcdn.com/w160/ar.png" alt="Argentina" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="CL">
+                <img src="https://flagcdn.com/w160/cl.png" alt="Chile" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="CO">
+                <img src="https://flagcdn.com/w160/co.png" alt="Colombia" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="ZA">
+                <img src="https://flagcdn.com/w160/za.png" alt="South Africa" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="EG">
+                <img src="https://flagcdn.com/w160/eg.png" alt="Egypt" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="NG">
+                <img src="https://flagcdn.com/w160/ng.png" alt="Nigeria" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="KE">
+                <img src="https://flagcdn.com/w160/ke.png" alt="Kenya" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="TW">
+                <img src="https://flagcdn.com/w160/tw.png" alt="Taiwan" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="BD">
+                <img src="https://flagcdn.com/w160/bd.png" alt="Bangladesh" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="PK">
+                <img src="https://flagcdn.com/w160/pk.png" alt="Pakistan" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="CZ">
+                <img src="https://flagcdn.com/w160/cz.png" alt="Czech Republic" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="HU">
+                <img src="https://flagcdn.com/w160/hu.png" alt="Hungary" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="RO">
+                <img src="https://flagcdn.com/w160/ro.png" alt="Romania" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="BG">
+                <img src="https://flagcdn.com/w160/bg.png" alt="Bulgaria" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="HR">
+                <img src="https://flagcdn.com/w160/hr.png" alt="Croatia" class="qc-flag-icon" />
+              </div>
+              <div class="qc-flag-item" data-country="IS">
+                <img src="https://flagcdn.com/w160/is.png" alt="Iceland" class="qc-flag-icon" />
+              </div>
+            </div>
+          </div>
+          <p class="qc-flags-caption" data-i18n="home.flags_caption">构建覆盖全球的投资网络，捕捉每一个增长机会</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="qc-section qc-section-alt">
+      <div class="qc-container">
+        <header class="qc-section-header">
+          <div class="qc-section-video qc-reveal reveal-scale">
+            <video src="./assets/videos/3d-react.mp4" autoplay muted loop playsinline width="220" height="220" poster="./assets/videos/3d-react-fallback.jpg">
+              <img src="./assets/videos/3d-react-fallback.jpg" alt="五维核心原则" width="220" height="220" />
+            </video>
+          </div>
+          <h2 class="qc-reveal reveal-up" data-i18n="home.principles_title">五维核心原则</h2>
+          <h3 class="qc-section-subtitle qc-reveal reveal-up stagger-1" data-i18n="home.principles_subtitle">构建可信赖的全球价值网络</h3>
+          <p class="qc-reveal reveal-up stagger-2" data-i18n="home.principles_desc">透明、安全、协作、创新与可持续，是启诚面向全球数字经济时代的底层设计逻辑。这五个维度相互支撑，共同构建了一个开放、包容、可信赖的全球数字经济生态系统。</p>
+        </header>
+        
+        <div class="qc-grid qc-grid-5" style="margin-top: 3rem;">
+          <div class="qc-card qc-reveal reveal-up stagger-1">
+            <div class="qc-principle-icon">
+              <img src="./assets/icons/principle-transparency.svg" alt="透明" />
+            </div>
+            <h3 data-i18n="home.principle_transparency_title">透明</h3>
+            <p data-i18n="home.principle_transparency_desc">以数据与流程透明为基础，通过公开透明的信息披露机制，提升市场信任度与监管友好度，让每一笔交易、每一个决策都有据可查。</p>
+          </div>
+          <div class="qc-card qc-reveal reveal-up stagger-2">
+            <div class="qc-principle-icon">
+              <img src="./assets/icons/principle-security.svg" alt="安全" />
+            </div>
+            <h3 data-i18n="home.principle_security_title">安全</h3>
+            <p data-i18n="home.principle_security_desc">通过技术与制度双重保障，采用多重加密、智能风控与合规审计，守护资产与信息安全，为全球用户提供银行级的安全保障。</p>
+          </div>
+          <div class="qc-card qc-reveal reveal-up stagger-3">
+            <div class="qc-principle-icon">
+              <img src="./assets/icons/principle-collaboration.svg" alt="协作" />
+            </div>
+            <h3 data-i18n="home.principle_collaboration_title">协作</h3>
+            <p data-i18n="home.principle_collaboration_desc">鼓励跨地区、跨行业协同，构建多方共赢的价值网络，连接全球资源，实现资源共享与价值共创，推动全球数字经济协同发展。</p>
+          </div>
+          <div class="qc-card qc-reveal reveal-up stagger-4">
+            <div class="qc-principle-icon">
+              <img src="./assets/icons/principle-innovation.svg" alt="创新" />
+            </div>
+            <h3 data-i18n="home.principle_innovation_title">创新</h3>
+            <p data-i18n="home.principle_innovation_desc">持续探索 AI、区块链、大数据等前沿技术在金融与产业中的高效落地，以技术创新驱动商业模式创新，引领数字经济发展方向。</p>
+          </div>
+          <div class="qc-card qc-reveal reveal-up stagger-5">
+            <div class="qc-principle-icon">
+              <img src="./assets/icons/principle-sustainability.svg" alt="可持续" />
+            </div>
+            <h3 data-i18n="home.principle_sustainability_title">可持续</h3>
+            <p data-i18n="home.principle_sustainability_desc">关注长期价值与社会责任，将数字经济与绿色发展结合，构建可持续的商业模式，为全球数字经济的长期健康发展贡献力量。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    </section>
+
+    <section class="qc-section qc-section-txo">
+      <div class="qc-container">
+        <header class="qc-section-header">
+          <div class="qc-section-video qc-reveal reveal-scale">
+            <video src="./assets/videos/3d-inbound.mp4" autoplay muted loop playsinline width="220" height="220" poster="./assets/videos/3d-inbound-fallback.jpg">
+              <img src="./assets/videos/3d-inbound-fallback.jpg" alt="TXO 交易所 · 数字资产基础设施" width="220" height="220" />
+            </video>
+          </div>
+          <h2 class="qc-reveal reveal-up" data-i18n="home.txo_section_title">TXO 交易所 · 数字资产基础设施</h2>
+          <p class="qc-reveal reveal-up stagger-1">
+            <span data-i18n="home.txo_section_desc">TXO 由 Qicheng 体系联合顶级技术与金融团队打造，致力于构建新一代高性能、强风控的数字资产交易基础设施。</span>
+          </p>
+        <div class="qc-hero-actions qc-reveal reveal-up stagger-2" style="justify-content: center; display: flex;">
+            <a href="./pages/txo.html" class="qc-btn qc-btn-primary reveal-btn" data-i18n="home.txo_cta_detail">了解 TXO 详情</a>
+            <a href="./pages/license.html" class="qc-btn qc-btn-secondary reveal-btn" data-i18n="home.txo_cta_license">查看合规与牌照</a>
+        </div>
+        </header>
+        
+        <div class="qc-crypto-marquee-container qc-reveal reveal-up stagger-3">
+          <div class="qc-crypto-marquee">
+            <div class="qc-crypto-item"><img src="./assets/icons/PYUSD.svg" alt="PYUSD"><span>PYUSD</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/USDC.svg" alt="USDC"><span>USDC</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/ATOM.svg" alt="ATOM"><span>ATOM</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/SOL.svg" alt="Solana (SOL)"><span>Solana (SOL)</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/TRX.svg" alt="Tron（TRX）"><span>Tron（TRX）</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/DOT.svg" alt="Polkadot (DOT)"><span>Polkadot (DOT)</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/DOGE.svg" alt="Dogecoin"><span>Dogecoin</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/AAVE.svg" alt="Aave (AAVE)"><span>Aave (AAVE)</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/XLM.svg" alt="Stellar"><span>Stellar</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/OP.svg" alt="Optimism(OP)"><span>Optimism(OP)</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/USDT.svg" alt="USDT"><span>USDT</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/UNI.svg" alt="Uniswap"><span>Uniswap</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/ETH.svg" alt="ETH"><span>ETH</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/POLYGON.svg" alt="Polygon"><span>Polygon</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/ALGO.svg" alt="Algorand (ALGO)"><span>Algorand (ALGO)</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/SHIB.svg" alt="Shiba Inu"><span>Shiba Inu</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/AVAX.svg" alt="Avalanche (AVAX)"><span>Avalanche (AVAX)</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/BTC.svg" alt="BTC"><span>BTC</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/PEPE.svg" alt="PEPE"><span>PEPE</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/XRP.svg" alt="XRP"><span>XRP</span></div>
+            <!-- Duplicate -->
+            <div class="qc-crypto-item"><img src="./assets/icons/PYUSD.svg" alt="PYUSD"><span>PYUSD</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/USDC.svg" alt="USDC"><span>USDC</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/ATOM.svg" alt="ATOM"><span>ATOM</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/SOL.svg" alt="Solana (SOL)"><span>Solana (SOL)</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/TRX.svg" alt="Tron（TRX）"><span>Tron（TRX）</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/DOT.svg" alt="Polkadot (DOT)"><span>Polkadot (DOT)</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/DOGE.svg" alt="Dogecoin"><span>Dogecoin</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/AAVE.svg" alt="Aave (AAVE)"><span>Aave (AAVE)</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/XLM.svg" alt="Stellar"><span>Stellar</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/OP.svg" alt="Optimism(OP)"><span>Optimism(OP)</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/USDT.svg" alt="USDT"><span>USDT</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/UNI.svg" alt="Uniswap"><span>Uniswap</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/ETH.svg" alt="ETH"><span>ETH</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/POLYGON.svg" alt="Polygon"><span>Polygon</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/ALGO.svg" alt="Algorand (ALGO)"><span>Algorand (ALGO)</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/SHIB.svg" alt="Shiba Inu"><span>Shiba Inu</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/AVAX.svg" alt="Avalanche (AVAX)"><span>Avalanche (AVAX)</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/BTC.svg" alt="BTC"><span>BTC</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/PEPE.svg" alt="PEPE"><span>PEPE</span></div>
+            <div class="qc-crypto-item"><img src="./assets/icons/XRP.svg" alt="XRP"><span>XRP</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="qc-section-bridge">
+      <div class="qc-vercel-style-quote qc-reveal reveal-up">
+        <div class="qc-vercel-icon-wrap qc-reveal reveal-scale stagger-1">
+          <img src="./assets/icons/vercel.svg" alt="Mission" class="qc-vercel-icon">
+        </div>
+        <blockquote class="qc-vercel-text qc-reveal reveal-up stagger-2">
+          <span data-i18n="home.bridge_quote">我们始终致力于推动共享经济，创造人人富足的未来</span>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="testimonials" class="qc-testimonials-full">
+      <div class="qc-container">
+        <header class="qc-testimonials-header">
+          <div class="qc-section-video qc-reveal reveal-scale">
+            <video src="./assets/videos/3d-broadcast.mp4" autoplay muted loop playsinline width="220" height="220" poster="./assets/videos/3d-broadcast-fallback.jpg">
+              <img src="./assets/videos/3d-broadcast-fallback.jpg" alt="超越期望" width="220" height="220" />
+            </video>
+          </div>
+          <h2 class="qc-resend-h2 qc-reveal reveal-up" data-i18n="home.testimonials_title">超越期望</h2>
+          <p class="qc-resend-p qc-reveal reveal-up stagger-1" data-i18n-html="home.testimonials_desc">
+            启诚投资凭借其深厚的市场洞察力和精准的投资策略，一直致力于为客户创造长期稳定的财富增长。<br class="hidden sm:block">
+            在我们的专业指导下，每一位投资者都能够在复杂的市场环境中稳步前行。<br class="hidden sm:block">
+            与TXO交易软件的深度合作，更是为我们的投资者提供了无与伦比的交易体验。
+          </p>
+        </header>
+      </div>
+      <div class="qc-testimonials-track-wrapper qc-reveal reveal-up stagger-2">
+        <div class="qc-testimonials-track">
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“加入启诚投资是我做过最正确的职业选择。收益始终保持稳定，信号极其精准。这确实是一种全新的工作方式。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/adam-rankin.jpg" alt="Adam Rankin" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Adam Rankin</span>
+              <span class="qc-testimonial-role">伦敦, 英国</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“我最喜欢的是它的灵活性。每天只需花费极少的时间，效果却非常显著。提款总是准时到达，让我完全没有后顾之忧。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/cassidy-williams.jpg" alt="Cassidy Williams" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Cassidy Williams</span>
+              <span class="qc-testimonial-role">西雅图, 美国</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“启诚投资提供了我在其他地方从未见过的专业支持。准时的信号和可靠的基础设施让数字资产管理变得轻而易举。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/sebastien-chopin.jpg" alt="Sébastien Chopin" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Sébastien Chopin</span>
+              <span class="qc-testimonial-role">巴黎, 法国</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“该平台的稳定性是无与伦比的。它已成为我数字投资的首选。强烈推荐给任何寻求持续增长的人。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/giovana-yahiro.jpg" alt="Giovana Yahiro" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Giovana Yahiro</span>
+              <span class="qc-testimonial-role">柏林, 德国</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“可靠的信号和快速的提款。启诚投资简化了我的日常生活，同时显著提升了我的投资组合稳定性。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/thomas-russell.jpg" alt="Thomas Russell" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Thomas Russell</span>
+              <span class="qc-testimonial-role">多伦多, 加拿大</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“在复杂的金融市场中，启诚的精准策略是我稳健获利的钥匙。这不仅仅是投资，更是一种智能生活的体现。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/alexandre-cisneiros.jpg" alt="Alexandre Cisneiros" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Alexandre Cisneiros</span>
+              <span class="qc-testimonial-role">圣保罗, 巴西</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“每天只需要 15 分钟跟进信号，我就能获得远超传统理财的收益。这完全改变了我对‘工作’的定义。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/amadeo-pellicce.jpg" alt="Amadeo Pellicce" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Amadeo Pellicce</span>
+              <span class="qc-testimonial-role">米兰, 意大利</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“作为一名职业经理人，我非常看重风险控制。启诚投资的透明度和风控逻辑让我能够安心地进行长期资产配置。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/andre-malta.jpg" alt="Andre Malta" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Andre Malta</span>
+              <span class="qc-testimonial-role">里斯本, 葡萄牙</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“信号非常准时，操作也非常简单。即使我身在非洲，也能享受到来自伦敦的最顶级的投资机会。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/bereket-engida.jpg" alt="Bereket Engida" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Bereket Engida</span>
+              <span class="qc-testimonial-role">亚的斯亚贝巴, 埃塞俄比亚</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“启诚投资的提款流程是我体验过最顺畅的。资金的流动性得到了极大的保障，这在目前的市场环境下非常难得。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/bradley-greenwood.jpg" alt="Bradley Greenwood" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Bradley Greenwood</span>
+              <span class="qc-testimonial-role">悉尼, 澳大利亚</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“这就是我一直在寻找的‘另一种工作选择’。它赋予了我财务自由的同时，也给了我更多陪伴家人的时间。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/brandon-strittmatter.jpg" alt="Brandon Strittmatter" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Brandon Strittmatter</span>
+              <span class="qc-testimonial-role">芝加哥, 美国</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“TXO 交易所的高性能和启诚的精准信号简直是绝配。这是目前数字资产交易领域最顶尖的体验。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/brek-goin.jpg" alt="Brek Goin" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Brek Goin</span>
+              <span class="qc-testimonial-role">奥斯汀, 美国</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“信号的准确率高得惊人。跟随启诚的节奏，我几乎不需要自己去研究复杂的 K 线，系统已经帮我做好了决策。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/connor-mann.jpg" alt="Connor Mann" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Connor Mann</span>
+              <span class="qc-testimonial-role">都柏林, 爱尔兰</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“在这个波动剧烈的时代，启诚投资为我提供了一个避风港。稳定的收益和专业的团队让我对未来充满信心。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/danilo-woznica.jpg" alt="Danilo Woznica" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Danilo Woznica</span>
+              <span class="qc-testimonial-role">华沙, 波兰</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“从最初的尝试到现在的信任，启诚投资用结果证明了一切。收益曲线非常漂亮，且一直处于受控状态。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/giovanni-keppelen.jpg" alt="Giovanni Keppelen" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Giovanni Keppelen</span>
+              <span class="qc-testimonial-role">里约热内卢, 巴西</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“这里的信号系统是我用过最专业的。它不仅准时，而且背后有着深厚的市场逻辑支撑，让人信服。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/guillaume-salles.jpg" alt="Guillaume Salles" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Guillaume Salles</span>
+              <span class="qc-testimonial-role">里昂, 法国</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“即使身在亚洲不同的时区，启诚的全球化网络也确保了我能第一时间接收到信号。这确实是真正的全球化协作。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/hahnbee-lee.jpg" alt="Hahnbee Lee" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Hahnbee Lee</span>
+              <span class="qc-testimonial-role">首尔, 韩国</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“每天只需要在手机上点几下，收益就自动进账。这种极简的投资方式非常适合我这种工作忙碌的人。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/joe-demaria.jpg" alt="Joe DeMaria" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Joe DeMaria</span>
+              <span class="qc-testimonial-role">迈阿密, 美国</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“提款速度快得离谱，客服也非常专业。启诚投资让我感受到了什么是真正的‘客户至上’。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/john-pham.jpg" alt="John Pham" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">John Pham</span>
+              <span class="qc-testimonial-role">胡志明市, 越南</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“启诚投资的复利增长模式让我看到了财富自由的曙光。只要跟随信号，稳定就是最大的保障。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/joshua-jansen.jpg" alt="Joshua Jansen" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Joshua Jansen</span>
+              <span class="qc-testimonial-role">奥斯陆, 挪威</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“作为一个技术开发者，我非常佩服启诚底层的架构。它在保证高性能交易的同时，还能把风控做得如此极致。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/paul-copplestone.jpg" alt="Paul Copplestone" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Paul Copplestone</span>
+              <span class="qc-testimonial-role">惠灵顿, 新西兰</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“这是我遇到过最透明、最靠谱的投资机构。每一笔收益都清清楚楚，每一个信号都经得起推敲。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/pedro-duarte.jpg" alt="Pedro Duarte" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Pedro Duarte</span>
+              <span class="qc-testimonial-role">马德里, 西班牙</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“启诚投资让我在繁忙的工作之余，多了一份极其可观的被动收入。这真的是一种生活方式的改变。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/roberto-riccio.jpg" alt="Roberto Riccio" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Roberto Riccio</span>
+              <span class="qc-testimonial-role">罗马, 意大利</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“加入启诚后，我再也不用为明天的股市波动发愁了。稳定的收益和精准的预测让我感到非常踏实。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/ryan-livingston.jpg" alt="Ryan Livingston" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Ryan Livingston</span>
+              <span class="qc-testimonial-role">温哥华, 加拿大</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“信号的准确性配合 TXO 的极速执行，这种组合在市场上几乎无敌。启诚投资确实走在了时代的前沿。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/ryan-saddi.jpg" alt="Ryan Saddi" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Ryan Saddi</span>
+              <span class="qc-testimonial-role">阿布扎比, 阿联酋</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“如果你想要一种既省心又能赚钱的投资方式，启诚投资是唯一不二的选择。我已经向所有的朋友推荐了它。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/sahil-lavingia.jpg" alt="Sahil Lavingia" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Sahil Lavingia</span>
+              <span class="qc-testimonial-role">旧金山, 美国</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“每天只需关注群里的信号，跟着操作就行。这种傻瓜式的投资体验，收益却非常惊人。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/sam-ducker.jpg" alt="Sam Ducker" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Sam Ducker</span>
+              <span class="qc-testimonial-role">伯明翰, 英国</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“在众多的投资平台中，启诚投资的合规性和透明度是最高的。这是我们长期合作的基石。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/shariar-kabir.jpg" alt="Shariar Kabir" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Shariar Kabir</span>
+              <span class="qc-testimonial-role">达卡, 孟加拉国</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“精准的信号系统让我彻底告别了投资的盲目性。每一次决策背后都有强大的数据支持，这让我感到非常安心。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/sriram-bhargav.jpg" alt="Sriram Bhargav" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Sriram Bhargav</span>
+              <span class="qc-testimonial-role">班加罗尔, 印度</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“启诚投资的信号不仅仅是数字，更是财富增长的信号灯。感谢团队的辛勤付出，让普通人也能分享到数字经济的红利。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/steven-chacko.jpg" alt="Steven Chacko" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Steven Chacko</span>
+              <span class="qc-testimonial-role">休斯顿, 美国</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“这种投资模式非常高效。我不再需要时刻盯着屏幕，信号一到，操作一分钟，剩下的就是等待收益。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/steven-tey.jpg" alt="Steven Tey" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Steven Tey</span>
+              <span class="qc-testimonial-role">曼谷, 泰国</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“启诚投资改变了我对传统投资的认知。稳定的收益曲线和及时的服务响应，是所有投资者的梦想。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/taylor-facen.jpg" alt="Taylor Facen" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Taylor Facen</span>
+              <span class="qc-testimonial-role">亚特兰大, 美国</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“这就是数字经济时代的最优选。启诚投资把复杂的技术转化成了简单的收益，这太棒了。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/thiago-costa.jpg" alt="Thiago Costa" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Thiago Costa</span>
+              <span class="qc-testimonial-role">波尔图, 葡萄牙</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“我对启诚投资的安全性印象深刻。在这个领域，安全高于一切，而启诚做到了极致。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/thomas-mann.jpg" alt="Thomas Mann" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Thomas Mann</span>
+              <span class="qc-testimonial-role">慕尼黑, 德国</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“这种高频、稳定的投资方式非常适合我的财务规划。启诚投资已成为我资产配置中的核心部分。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/ty-sharp.jpg" alt="Ty Sharp" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Ty Sharp</span>
+              <span class="qc-testimonial-role">洛杉矶, 美国</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“感谢启诚投资让我学会了如何聪明地赚钱。这不仅是投资技巧的提升，更是思维方式的升级。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/vlad-matsiiako.jpg" alt="Vlad Matsiiako" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Vlad Matsiiako</span>
+              <span class="qc-testimonial-role">基辅, 乌克兰</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“启诚投资的多元化策略让我在不同的市场环境下都能找到盈利点。专业的团队和精准的信号是我成功的基石。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/giovanni-keppelen.jpg" alt="Giovanni Keppelen" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Giovanni Keppelen</span>
+              <span class="qc-testimonial-role">布鲁塞尔, 比利时</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“在这里，我体验到了前所未有的投资自由。启诚的全球化视野和本地化服务完美结合，让投资变得轻松有趣。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/pedro-duarte.jpg" alt="Pedro Duarte" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Pedro Duarte</span>
+              <span class="qc-testimonial-role">波哥大, 哥伦比亚</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“启诚投资不仅仅是一个理财工具，它更像是一个智慧的投资伙伴。每一步操作都清晰透明，让人倍感安心。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/thomas-mann.jpg" alt="Thomas Mann" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Thomas Mann</span>
+              <span class="qc-testimonial-role">苏黎世, 瑞士</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card">
+          <div class="qc-testimonial-content">
+            <p>“我非常欣赏启诚对创新的执着。在这个快速变化的时代，只有不断进取的团队才能为投资者创造持续的价值。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/sebastien-chopin.jpg" alt="Sébastien Chopin" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Sébastien Chopin</span>
+              <span class="qc-testimonial-role">里昂, 法国</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="qc-testimonial-card" aria-hidden="true">
+          <div class="qc-testimonial-content">
+            <p>“加入启诚投资是我做过最正确的职业选择。收益始终保持稳定，信号极其精准。这确实是一种全新的工作方式。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/adam-rankin.jpg" alt="Adam Rankin" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Adam Rankin</span>
+              <span class="qc-testimonial-role">伦敦, 英国</span>
+            </div>
+          </div>
+        </div>
+        <div class="qc-testimonial-card" aria-hidden="true">
+          <div class="qc-testimonial-content">
+            <p>“我最喜欢的是它的灵活性。每天只需花费极少的时间，效果却非常显著。提款总是准时到达，让我完全没有后顾之忧。”</p>
+          </div>
+          <div class="qc-testimonial-author">
+            <img src="./assets/images/testimonials/cassidy-williams.jpg" alt="Cassidy Williams" class="qc-testimonial-avatar" />
+            <div class="qc-testimonial-info">
+              <span class="qc-testimonial-name">Cassidy Williams</span>
+              <span class="qc-testimonial-role">西雅图, 美国</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <footer class="qc-footer">
+      <div class="qc-footer-brand" aria-hidden="true">
+        <span class="qc-footer-brand-text">QICHENG</span>
+      </div>
+      <div class="qc-container qc-footer-inner">
+        <div class="qc-footer-grid">
+          <div class="qc-footer-column qc-footer-contact">
+            <div class="qc-footer-logo">
+              <img src="./assets/images/qicheng-logo-wide.png" alt="Qicheng Holdings Group" />
+            </div>
+            <p class="qc-footer-address">
+              全球数字金融与经济系统协作组织
+            </p>
+            <div class="qc-footer-social" aria-label="关键页面">
+              <a class="qc-footer-social-icon" href="./pages/txo.html" aria-label="TXO 交易所" title="TXO 交易所">
+                <img src="./assets/icons/page-txo.svg" alt="TXO 交易所" />
+              </a>
+              <a class="qc-footer-social-icon" href="./pages/business-model.html" aria-label="业务模式" title="业务模式">
+                <img src="./assets/icons/page-business.svg" alt="商业模式" />
+              </a>
+              <a class="qc-footer-social-icon" href="./pages/license.html" aria-label="合规与牌照" title="合规与牌照">
+                <img src="./assets/icons/page-license.svg" alt="合规与牌照" />
+              </a>
+            </div>
+            <div class="qc-footer-status">
+              <span class="qc-status-indicator"></span>
+              <span>All systems operational</span>
+            </div>
+          </div>
+
+          <div class="qc-footer-column qc-footer-nav">
+            <h4>关于启诚</h4>
+            <ul>
+              <li><a href="./pages/about.html">机构概览</a></li>
+              <li><a href="./pages/about.html#founder">创始人</a></li>
+              <li><a href="./pages/about.html#structure">组织结构</a></li>
+              <li><a href="./pages/about.html#qgf">QGF 基金会</a></li>
+              <li><a href="./pages/about.html#mission">使命</a></li>
+              <li><a href="./pages/timeline.html">发展历程</a></li>
+              <li><a href="#testimonials">用户评价</a></li>
+            </ul>
+          </div>
+
+          <div class="qc-footer-column qc-footer-nav">
+            <h4>TXO 交易所</h4>
+            <ul>
+              <li><a href="./pages/txo.html#origin">TXO 的诞生</a></li>
+              <li><a href="./pages/txo.html#founder">创始人</a></li>
+              <li><a href="./pages/txo.html#team">研发团队</a></li>
+              <li><a href="./pages/txo.html#offline">线下交易服务</a></li>
+              <li><a href="./pages/license.html#statement">合规与牌照</a></li>
+            </ul>
+          </div>
+
+          <div class="qc-footer-column qc-footer-nav">
+            <h4>商业模式</h4>
+            <ul>
+              <li><a href="./pages/business-model.html#web2">WEB2 创新</a></li>
+              <li><a href="./pages/business-model.html#core">核心模式</a></li>
+              <li><a href="./pages/business-model.html#future">未来企划</a></li>
+              <li><a href="./pages/business-model.html#v5">V5 战略</a></li>
+            </ul>
+          </div>
+
+          <div class="qc-footer-column qc-footer-nav">
+            <h4>盈利体系</h4>
+            <ul>
+              <li><a href="./pages/profit.html#signals">交易信号系统</a></li>
+              <li><a href="./pages/profit.html#referral">推荐计划</a></li>
+              <li><a href="./pages/profit.html#vip">VIP 团队计划</a></li>
+              <li><a href="./pages/profit.html#reports">收益报表</a></li>
+              <li><a href="./pages/calculator.html">收益计算</a></li>
+            </ul>
+          </div>
+
+          <div class="qc-footer-column qc-footer-cta">
+            <h4>Ready to Trade?</h4>
+            <a href="https://txoca.com" target="_blank" class="qc-btn-footer-cta">立即交易</a>
+          </div>
+        </div>
+
+        <div class="qc-footer-bottom">
+          <div class="qc-footer-divider"></div>
+          <p>© <span id="year"></span> Qicheng Holdings Group. All rights reserved.</p>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var yearEl = document.getElementById("year");
+          if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+          // 标题鼠标跟随光效（仅作用于文字）
+          var heroTitle = document.querySelector(".qc-hero-title");
+          if (heroTitle) {
+            var currentX = 50, currentY = 50;
+            var targetX = 50, targetY = 50;
+            var rafId = null;
+
+            function updateGradient() {
+              currentX += (targetX - currentX) * 0.12;
+              currentY += (targetY - currentY) * 0.12;
+              heroTitle.style.setProperty("--mouse-x", currentX + "%");
+              heroTitle.style.setProperty("--mouse-y", currentY + "%");
+              rafId = requestAnimationFrame(updateGradient);
+            }
+
+            heroTitle.addEventListener("mouseenter", function () {
+              if (!rafId) rafId = requestAnimationFrame(updateGradient);
+            });
+
+            heroTitle.addEventListener("mousemove", function (e) {
+              var rect = heroTitle.getBoundingClientRect();
+              targetX = ((e.clientX - rect.left) / rect.width) * 100;
+              targetY = ((e.clientY - rect.top) / rect.height) * 100;
+            });
+
+            heroTitle.addEventListener("mouseleave", function () {
+              targetX = 50;
+              targetY = 50;
+              setTimeout(function () {
+                if (rafId) {
+                  cancelAnimationFrame(rafId);
+                  rafId = null;
+                }
+              }, 1200);
+            });
+          }
+
+          // 机构概览标题鼠标跟随光效（仅作用于文字）
+          var sectionTitle = document.querySelector(".qc-section-header h2");
+          if (sectionTitle) {
+            var currentX2 = 50, currentY2 = 50;
+            var targetX2 = 50, targetY2 = 50;
+            var rafId2 = null;
+
+            function updateGradient2() {
+              currentX2 += (targetX2 - currentX2) * 0.12;
+              currentY2 += (targetY2 - currentY2) * 0.12;
+              sectionTitle.style.setProperty("--mouse-x", currentX2 + "%");
+              sectionTitle.style.setProperty("--mouse-y", currentY2 + "%");
+              rafId2 = requestAnimationFrame(updateGradient2);
+            }
+
+            sectionTitle.addEventListener("mouseenter", function () {
+              if (!rafId2) rafId2 = requestAnimationFrame(updateGradient2);
+            });
+
+            sectionTitle.addEventListener("mousemove", function (e) {
+              var rect = sectionTitle.getBoundingClientRect();
+              targetX2 = ((e.clientX - rect.left) / rect.width) * 100;
+              targetY2 = ((e.clientY - rect.top) / rect.height) * 100;
+            });
+
+            sectionTitle.addEventListener("mouseleave", function () {
+              targetX2 = 50;
+              targetY2 = 50;
+              setTimeout(function () {
+                if (rafId2) {
+                  cancelAnimationFrame(rafId2);
+                  rafId2 = null;
+                }
+              }, 1200);
+            });
+          }
+
+          // 图片轮播点击切换
+          var carouselItems = document.querySelectorAll('.qc-carousel-item');
+          var currentIndex = 3; // 默认中心图片是第4张（index 3）
+
+          function isRtl() {
+            return document.documentElement.getAttribute('dir') === 'rtl' || document.body.classList.contains('qc-rtl');
+          }
+
+          function getDirFactor() {
+            return isRtl() ? -1 : 1;
+          }
+
+          function updateCarousel() {
+            var dirFactor = getDirFactor();
+            carouselItems.forEach(function(item, index) {
+              var dataIndex = parseInt(item.getAttribute('data-index'));
+              var offset = dataIndex - currentIndex;
+              
+              item.classList.remove('qc-carousel-active');
+              
+              var translateX, rotateY, scale, opacity, zIndex;
+              
+              if (offset === 0) {
+                // 中心图片
+                translateX = 0;
+                rotateY = 0;
+                scale = 1;
+                opacity = 1;
+                zIndex = 7;
+                item.classList.add('qc-carousel-active');
+              } else if (offset > 0) {
+                // 右侧图片
+                if (offset === 3) {
+                  translateX = 580;
+                  rotateY = -45;
+                  scale = 0.85;
+                  opacity = 0.4;
+                } else if (offset === 2) {
+                  translateX = 380;
+                  rotateY = -30;
+                  scale = 0.9;
+                  opacity = 0.5;
+                } else if (offset === 1) {
+                  translateX = 190;
+                  rotateY = -15;
+                  scale = 0.95;
+                  opacity = 0.7;
+                } else {
+                  translateX = 190 * offset;
+                  rotateY = -15 * offset;
+                  scale = 1 - 0.05 * offset;
+                  opacity = Math.max(0.3, 1 - 0.2 * offset);
+                }
+                zIndex = 4 - offset;
+              } else {
+                // 左侧图片
+                var absOffset = Math.abs(offset);
+                if (absOffset === 3) {
+                  translateX = -580;
+                  rotateY = 45;
+                  scale = 0.85;
+                  opacity = 0.4;
+                } else if (absOffset === 2) {
+                  translateX = -380;
+                  rotateY = 30;
+                  scale = 0.9;
+                  opacity = 0.5;
+                } else if (absOffset === 1) {
+                  translateX = -190;
+                  rotateY = 15;
+                  scale = 0.95;
+                  opacity = 0.7;
+                } else {
+                  translateX = -190 * absOffset;
+                  rotateY = 15 * absOffset;
+                  scale = 1 - 0.05 * absOffset;
+                  opacity = Math.max(0.3, 1 - 0.2 * absOffset);
+                }
+                zIndex = 4 - absOffset;
+              }
+              
+              // 设置 CSS 变量供悬停效果使用
+              item.style.setProperty('--current-x', translateX * dirFactor + 'px');
+              item.style.setProperty('--current-ry', rotateY * dirFactor + 'deg');
+              item.style.setProperty('--current-opacity', opacity);
+              
+              item.style.zIndex = String(zIndex);
+              item.style.transform = 'translateX(' + translateX * dirFactor + 'px) rotateY(' + rotateY * dirFactor + 'deg) scale(' + scale + ')';
+              item.style.opacity = String(opacity);
+            });
+          }
+
+          // 按钮切换
+          var prevBtn = document.querySelector('.qc-carousel-btn-prev');
+          var nextBtn = document.querySelector('.qc-carousel-btn-next');
+
+          function goToPrev() {
+            if (isRtl()) {
+              currentIndex = (currentIndex + 1) % 7;
+            } else {
+              currentIndex = (currentIndex - 1 + 7) % 7;
+            }
+            updateCarousel();
+          }
+
+          function goToNext() {
+            if (isRtl()) {
+              currentIndex = (currentIndex - 1 + 7) % 7;
+            } else {
+              currentIndex = (currentIndex + 1) % 7;
+            }
+            updateCarousel();
+          }
+
+          if (prevBtn) {
+            prevBtn.addEventListener('click', goToPrev);
+          }
+          if (nextBtn) {
+            nextBtn.addEventListener('click', goToNext);
+          }
+
+          // 初始化
+          updateCarousel();
+
+          // 语言切换时（dir 改变）重新计算轮播方向
+          var dirObserver = new MutationObserver(function () {
+            updateCarousel();
+          });
+          dirObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['dir'] });
+
+          // 滚动揭露动画 (Scroll Reveal)
+          var revealCallback = function (entries, observer) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+
+                // 进入视口时重置横向滚动动画，避免元素隐藏期间动画已运行导致“很晚才出现”
+                var crypto = entry.target.querySelector && entry.target.querySelector('.qc-crypto-marquee');
+                if (crypto) {
+                  crypto.style.animation = 'none';
+                  crypto.offsetHeight;
+                  crypto.style.animation = '';
+                }
+                var testimonials = entry.target.querySelector && entry.target.querySelector('.qc-testimonials-track');
+                if (testimonials) {
+                  testimonials.style.animation = 'none';
+                  testimonials.offsetHeight;
+                  testimonials.style.animation = '';
+                }
+              } else {
+                // 离开视口时渐隐/消失
+                entry.target.classList.remove("is-visible");
+              }
+            });
+          };
+
+          var revealObserver = new IntersectionObserver(revealCallback, {
+            threshold: 0.15, // 元素出现 15% 时触发
+            rootMargin: "0px 0px -50px 0px" // 提前或推迟触发
+          });
+
+          document.querySelectorAll(".qc-reveal, .reveal-btn").forEach(function (el) {
+            revealObserver.observe(el);
+          });
+        });
+      </script>
+    </footer>
+    <script src="./assets/js/main.js?v=1.4"></script>
+  </body>
+</html>

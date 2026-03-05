@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      (function () {
+        try {
+          var key = 'qc_lang';
+          var lang = localStorage.getItem(key) || document.documentElement.getAttribute('lang') || 'en';
+          document.documentElement.classList.add('qc-i18n-pending');
+          document.documentElement.setAttribute('lang', lang);
+          document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+        } catch (_) {
+          document.documentElement.classList.add('qc-i18n-pending');
+          document.documentElement.setAttribute('lang', 'en');
+          document.documentElement.setAttribute('dir', 'ltr');
+        }
+      })();
+    </script>
+    <title data-i18n="about.page_title">启诚介绍 · Qicheng Holdings Group</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="了解 Qicheng Holdings Group 的机构概览、创始人、全球组织结构、QGF 基金会以及发展理念、使命与愿景。"
+      data-i18n="about.page_desc"
+      data-i18n-attr="content"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png" />
+    <link rel="shortcut icon" type="image/png" href="../assets/images/favicon-32x32.png" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css?v=1.3" />
+    <link rel="stylesheet" href="../assets/css/hero-tabs.css" />
+  </head>
+  <body class="body">
+    <header class="qc-header">
+      <div class="qc-container qc-header-inner">
+        <a class="qc-logo" href="../index.html" aria-label="Qicheng Holdings Group">
+          <img
+            class="qc-logo-mark"
+            src="../assets/images/qicheng-logo-wide.png"
+            alt="Qicheng Holdings Group"
+          />
+        </a>
+        <nav class="qc-nav" aria-label="主导航" data-i18n="nav.aria_main" data-i18n-attr="aria-label">
+          <button class="qc-nav-toggle" aria-label="Toggle navigation" data-i18n="nav.toggle" data-i18n-attr="aria-label">
+            <span class="qc-nav-toggle-icon"></span>
+          </button>
+          <ul class="qc-nav-list">
+            <li class="qc-nav-item">
+              <a href="../index.html" class="qc-nav-link">首页</a>
+            </li>
+            <li class="qc-nav-item qc-has-submenu">
+              <a class="qc-nav-link qc-nav-link-active" href="./about.html">
+                启诚投资
+                <span class="qc-nav-caret">▾</span>
+              </a>
+              <ul class="qc-submenu">
+                <li><a href="./about.html">机构概览</a></li>
+                <li><a href="./about.html#founder">创始人</a></li>
+                <li><a href="./about.html#structure">组织结构</a></li>
+                <li><a href="./about.html#qgf">QGF 基金会</a></li>
+                <li><a href="./about.html#mission">使命</a></li>
+                <li><a href="../index.html#testimonials">用户评价</a></li>
+              </ul>
+            </li>
+            <li class="qc-nav-item qc-has-submenu">
+              <a class="qc-nav-link" href="./business-model.html#web2">
+                商业模式
+                <span class="qc-nav-caret">▾</span>
+              </a>
+              <ul class="qc-submenu">
+                <li><a href="./business-model.html#web2">WEB2 创新</a></li>
+                <li><a href="./business-model.html#core">核心模式</a></li>
+                <li><a href="./business-model.html#future">未来企划</a></li>
+                <li><a href="./business-model.html#v5">V5 战略</a></li>
+              </ul>
+            </li>
+            <li class="qc-nav-item qc-has-submenu">
+              <a class="qc-nav-link" href="./txo.html#origin">
+                TXO 交易所
+                <span class="qc-nav-caret">▾</span>
+              </a>
+              <ul class="qc-submenu">
+                <li><a href="./txo.html#origin">TXO 的诞生</a></li>
+                <li><a href="./txo.html#founder">创始人</a></li>
+                <li><a href="./txo.html#team">研发团队</a></li>
+                <li><a href="./txo.html#offline">线下交易服务</a></li>
+              </ul>
+            </li>
+            <li class="qc-nav-item qc-has-submenu">
+              <a class="qc-nav-link" href="./license.html#statement">
+                合规与牌照
+                <span class="qc-nav-caret">▾</span>
+              </a>
+              <ul class="qc-submenu">
+                <li><a href="./license.html#statement">合法合规声明</a></li>
+                <li><a href="./license.html#verification">证书查询方式</a></li>
+              </ul>
+            </li>
+            <li class="qc-nav-item qc-has-submenu">
+              <a class="qc-nav-link" href="./profit.html#signals">
+                盈利体系
+                <span class="qc-nav-caret">▾</span>
+              </a>
+              <ul class="qc-submenu">
+                <li><a href="./profit.html#signals">交易信号系统</a></li>
+                <li><a href="./profit.html#referral">推荐计划</a></li>
+                <li><a href="./profit.html#vip">VIP 团队计划</a></li>
+                <li><a href="./profit.html#reports">收益报表</a></li>
+              </ul>
+            </li>
+            <li class="qc-nav-item">
+              <a href="./calculator.html" class="qc-nav-link">收益计算</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="qc-about-hero qc-about-hero--about" style="background: #000; padding: 12rem 0 6rem;">
+      <div class="qc-container">
+        <h1 class="qc-hero-title qc-reveal reveal-up stagger-1" style="font-size: clamp(3.5rem, 8vw, 6rem);" data-i18n-html="about.hero_title">构建全球<br>数字协作网络</h1>
+        <p class="qc-reveal reveal-up stagger-2">
+          <span data-i18n-html="about.hero_desc">Qicheng Holdings Group (QCH) 始于 2020 年，总部位于伦敦。<br class="hidden sm:block">
+          我们致力于连接全球金融中心，构建一个<span class="qc-text-highlight">透明</span>、<span class="qc-text-highlight">安全</span>且<span class="qc-text-highlight">可持续</span>的数字经济生态系统。</span>
+        </p>
+      </div>
+    </section>
+
+    <main class="qc-main">
+      <div class="qc-container">
+        <section id="overview" class="qc-about-section">
+          <header class="qc-about-section-header qc-reveal reveal-up">
+            <h2 data-i18n="about.overview_kicker">The Foundation</h2>
+            <h3 class="qc-gradient-title" data-i18n="about.overview_title">立足伦敦，连接全球</h3>
+          </header>
+          
+          <div class="qc-grid qc-grid-3 qc-reveal reveal-up stagger-1" style="gap: 2rem;">
+            <div class="qc-stat-item">
+              <div class="qc-stat-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <span class="qc-stat-value" data-counter-target="2020" data-counter-start="2026">2020</span>
+              <span class="qc-stat-label" data-i18n="about.stat_founded">成立年份</span>
+            </div>
+            <div class="qc-stat-item">
+              <div class="qc-stat-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M2 12H22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22C9.49872 19.2616 8.07725 15.708 8 12C8.07725 8.29203 9.49872 4.73835 12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <span class="qc-stat-value" data-counter-target="30" data-counter-start="1" data-counter-suffix="+">30+</span>
+              <span class="qc-stat-label" data-i18n="about.stat_countries">覆盖国家</span>
+            </div>
+            <div class="qc-stat-item">
+              <div class="qc-stat-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 1V23" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M17 5H9.5C8.57174 5 7.6815 5.36875 7.02513 6.02513C6.36875 6.6815 6 7.57174 6 8.5C6 9.42826 6.36875 10.3185 7.02513 10.9749C7.6815 11.6313 8.57174 12 9.5 12H14.5C15.4283 12 16.3185 12.3687 16.9749 13.0251C17.6313 13.6815 18 14.5717 18 15.5C18 16.4283 17.6313 17.3185 16.9749 17.9749C16.3185 18.6313 15.4283 19 14.5 19H6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <span class="qc-stat-value" data-counter-target="7.8" data-counter-start="1.8" data-counter-suffix="B">7.8B</span>
+              <span class="qc-stat-label" data-i18n="about.stat_aum">管理资产 (AUM)</span>
+            </div>
+          </div>
+
+          <!-- Intro Text -->
+          <div class="qc-reveal reveal-up" style="margin-top: 4rem; max-width: 900px; margin-left: auto; margin-right: auto; text-align: center; margin-bottom: 4rem;">
+            <p style="font-size: 1.25rem; line-height: 1.6; color: #fff; margin-bottom: 1.5rem; font-weight: 500;" data-i18n-html="about.intro_p1">
+              自创立伊始，QCH 便确立了“<span class="qc-text-highlight">全球数字经济协作网络建设者</span>”的宏大愿景。我们不仅仅是一家投资机构，更是一个连接数字资产与实体经济的桥梁。
+            </p>
+            <p style="font-size: 1rem; color: rgba(255,255,255,0.7); line-height: 1.7;" data-i18n-html="about.intro_p2">
+              依托伦敦成熟的监管环境、完备的金融基础设施与开放的创新生态，QCH 在短短数年内搭建起覆盖全球 <span class="qc-text-highlight">30+</span> 个国家和地区的协作网络。
+            </p>
+          </div>
+
+          <!-- Tabs + Image Layout (Moved from Hero) -->
+          <div class="qc-hero-content-wrapper qc-reveal reveal-up" style="display: flex; gap: 4rem; align-items: center; margin-top: 2rem;">
+            <!-- Left: Tabs -->
+            <div class="qc-hero-text" style="flex: 1; min-width: 300px; text-align: left;">
+              <div class="qc-hero-tabs">
+                <div class="qc-hero-tab active" data-target="compliance">
+                  <h3 class="qc-hero-tab-title" data-i18n="about.tab_compliance_title">合规运营</h3>
+                  <p class="qc-hero-tab-desc" data-i18n="about.tab_compliance_desc">TXO 交易所持有美国 MSB 牌照与合规运营资质，建立金融级风控体系。</p>
+                </div>
+                <div class="qc-hero-tab" data-target="tech">
+                  <h3 class="qc-hero-tab-title" data-i18n="about.tab_tech_title">技术驱动</h3>
+                  <p class="qc-hero-tab-desc" data-i18n="about.tab_tech_desc">融合 OpenAI、Gemini 等顶尖 AI 模型，打造智能化数字资产交易引擎。</p>
+                </div>
+                <div class="qc-hero-tab" data-target="ecosystem">
+                  <h3 class="qc-hero-tab-title" data-i18n="about.tab_ecosystem_title">生态共赢</h3>
+                  <p class="qc-hero-tab-desc" data-i18n="about.tab_ecosystem_desc">与高盛、红杉等全球顶级资本深度合作，构建可持续发展的金融生态。</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Images -->
+            <div class="qc-hero-image-display" style="flex: 1.2; min-width: 300px; position: relative;">
+              <div class="qc-hero-image-wrapper active" id="img-compliance">
+                <img src="/assets/images/qicheng/hero-tab-compliance.png" alt="合规运营资质" style="width: 100%; border-radius: 1rem; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 20px 40px rgba(0,0,0,0.5);" data-i18n="about.img_compliance_alt" data-i18n-attr="alt">
+              </div>
+              <div class="qc-hero-image-wrapper" id="img-tech">
+                <img src="/assets/images/qicheng/hero-tab-tech.png" alt="技术驱动伙伴" style="width: 100%; border-radius: 1rem; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 20px 40px rgba(0,0,0,0.5);" data-i18n="about.img_tech_alt" data-i18n-attr="alt">
+              </div>
+              <div class="qc-hero-image-wrapper" id="img-ecosystem">
+                <img src="/assets/images/qicheng/hero-tab-partners.png" alt="生态共赢伙伴" style="width: 100%; border-radius: 1rem; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 20px 40px rgba(0,0,0,0.5);" data-i18n="about.img_ecosystem_alt" data-i18n-attr="alt">
+              </div>
+            </div>
+          </div>
+
+          <div class="qc-partners-section qc-reveal reveal-up stagger-1">
+            <h4 class="qc-partners-title" data-i18n="about.partners_title">Our Partners</h4>
+            <div class="qc-partners-marquee-container">
+              <div class="qc-partners-marquee">
+                <img src="/assets/images/qicheng/partners-logo-strip.png" alt="Partners Logo Strip" data-i18n="about.partners_strip_alt" data-i18n-attr="alt">
+                <img src="/assets/images/qicheng/partners-logo-strip.png" alt="Partners Logo Strip" data-i18n="about.partners_strip_alt" data-i18n-attr="alt">
+                <img src="/assets/images/qicheng/partners-logo-strip.png" alt="Partners Logo Strip" data-i18n="about.partners_strip_alt" data-i18n-attr="alt">
+                <img src="/assets/images/qicheng/partners-logo-strip.png" alt="Partners Logo Strip" data-i18n="about.partners_strip_alt" data-i18n-attr="alt">
+                <img src="/assets/images/qicheng/partners-logo-strip.png" alt="Partners Logo Strip" data-i18n="about.partners_strip_alt" data-i18n-attr="alt">
+                <img src="/assets/images/qicheng/partners-logo-strip.png" alt="Partners Logo Strip" data-i18n="about.partners_strip_alt" data-i18n-attr="alt">
+                <img src="/assets/images/qicheng/partners-logo-strip.png" alt="Partners Logo Strip" data-i18n="about.partners_strip_alt" data-i18n-attr="alt">
+                <img src="/assets/images/qicheng/partners-logo-strip.png" alt="Partners Logo Strip" data-i18n="about.partners_strip_alt" data-i18n-attr="alt">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="founder" class="qc-about-section">
+          <header class="qc-about-section-header qc-reveal reveal-up">
+            <h2 data-i18n="about.founder_kicker">Leadership</h2>
+            <h3 class="qc-gradient-title" data-i18n="about.founder_title">数学与技术的融合</h3>
+          </header>
+
+          <div class="qc-founder-card qc-reveal reveal-up">
+            <div class="qc-founder-image-wrap">
+              <img src="/assets/images/qicheng/founder-robert-harrison.jpg" alt="Robert Harrison">
+            </div>
+            <div class="qc-founder-info">
+              <h4>Robert Harrison</h4>
+              <span class="qc-role" data-i18n="about.founder_role">Chief Executive Officer</span>
+              <p data-i18n-html="about.founder_p1">Robert Harrison 毕业于<span class="qc-text-highlight">牛津大学</span>，专攻金融数学与新兴经济体系。他拥有超过 17 年的国际金融科技、全球资产配置以及跨境监管框架经验。</p>
+              <p data-i18n-html="about.founder_p2">作为区块链技术与传统资本市场融合的先行者，Robert 先后参与了多个跨国数字金融基础设施项目。他被多家国际媒体誉为推动全球数字金融系统性发展的<span class="qc-text-highlight">关键人物</span>之一。</p>
+              <p data-i18n-html="about.founder_p3">在 Robert 的领导下，Qicheng Holdings Group 坚持严谨的结构模型与全球化战略视野，持续为全球投资者释放<span class="qc-text-highlight">长期价值</span>。</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="structure" class="qc-about-section">
+          <header class="qc-about-section-header qc-reveal reveal-up">
+            <h2 data-i18n="about.structure_kicker">Global Network</h2>
+            <h3 class="qc-gradient-title" data-i18n="about.structure_title">跨界协作，汇聚智慧</h3>
+          </header>
+          
+          <div class="qc-grid qc-grid-4 qc-reveal reveal-up stagger-1">
+            <div class="qc-card" style="text-align: center; padding: 3rem 2rem;">
+              <i class="ri-code-s-slash-line" style="font-size: 64px; color: var(--qc-color-primary); margin-bottom: 1.5rem; display: inline-block;"></i>
+              <h4 style="color: #fff; margin-bottom: 1rem;" data-i18n="about.structure_card1_title">技术专家</h4>
+              <p style="font-size: 0.9rem; color: rgba(255,255,255,0.6);" data-i18n="about.structure_card1_desc">人工智能与分布式系统领域的顶尖人才</p>
+            </div>
+            <div class="qc-card" style="text-align: center; padding: 3rem 2rem;">
+              <i class="ri-line-chart-line" style="font-size: 64px; color: var(--qc-color-primary); margin-bottom: 1.5rem; display: inline-block;"></i>
+              <h4 style="color: #fff; margin-bottom: 1rem;" data-i18n="about.structure_card2_title">金融分析师</h4>
+              <p style="font-size: 0.9rem; color: rgba(255,255,255,0.6);" data-i18n="about.structure_card2_desc">拥有敏锐市场洞察力的国际机构投资者</p>
+            </div>
+            <div class="qc-card" style="text-align: center; padding: 3rem 2rem;">
+              <i class="ri-building-2-line" style="font-size: 64px; color: var(--qc-color-primary); margin-bottom: 1.5rem; display: inline-block;"></i>
+              <h4 style="color: #fff; margin-bottom: 1rem;" data-i18n="about.structure_card3_title">行业领袖</h4>
+              <p style="font-size: 0.9rem; color: rgba(255,255,255,0.6);" data-i18n="about.structure_card3_desc">能源、制造业与教育领域的资深实干家</p>
+            </div>
+            <div class="qc-card" style="text-align: center; padding: 3rem 2rem;">
+              <i class="ri-government-line" style="font-size: 64px; color: var(--qc-color-primary); margin-bottom: 1.5rem; display: inline-block;"></i>
+              <h4 style="color: #fff; margin-bottom: 1rem;" data-i18n="about.structure_card4_title">经济顾问</h4>
+              <p style="font-size: 0.9rem; color: rgba(255,255,255,0.6);" data-i18n="about.structure_card4_desc">专注于国际政策研究的权威学者与顾问</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="qgf" class="qc-about-section">
+          <header class="qc-about-section-header qc-reveal reveal-up">
+            <h2 data-i18n="about.qgf_kicker">Foundation</h2>
+            <h3 class="qc-gradient-title" data-i18n="about.qgf_title">长期资本，驱动创新</h3>
+          </header>
+          
+          <div class="qc-vercel-style-quote qc-reveal reveal-up" style="max-width: 1000px; margin-bottom: 4rem;">
+            <blockquote class="qc-vercel-text">
+              <span data-i18n-html="about.qgf_quote">QGF 当前管理资产（AUM）约 <span class="qc-text-highlight">7.8 亿美元</span>，通过多资产组合模型与全球分布策略，为数字经济基础设施提供核心动力。</span>
+            </blockquote>
+          </div>
+
+          <div class="qc-grid qc-grid-3 qc-reveal reveal-up stagger-1">
+            <div class="qc-stat-item" style="padding: 0; overflow: hidden; background: #000; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px;">
+              <div style="height: 200px; overflow: hidden;">
+                <img src="/assets/images/qicheng/future-data-infrastructure.jpg" alt="长期资本" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" data-i18n="about.qgf_card1_img_alt" data-i18n-attr="alt">
+              </div>
+              <div style="padding: 1.5rem;">
+                <h4 style="color: #fff; margin-bottom: 1rem; font-size: 1.1rem;" data-i18n="about.qgf_card1_title">长期资本注入</h4>
+                <p style="font-size: 0.9rem; color: rgba(255,255,255,0.5);" data-i18n="about.qgf_card1_desc">源自 QCH 年度净利润按比例注入，确保持续扩展能力。</p>
+              </div>
+            </div>
+            <div class="qc-stat-item" style="padding: 0; overflow: hidden; background: #000; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px;">
+              <div style="height: 200px; overflow: hidden;">
+                <img src="/assets/images/qicheng/future-digital-economy-corridor.jpg" alt="战略合作" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" data-i18n="about.qgf_card2_img_alt" data-i18n-attr="alt">
+              </div>
+              <div style="padding: 1.5rem;">
+                <h4 style="color: #fff; margin-bottom: 1rem; font-size: 1.1rem;" data-i18n="about.qgf_card2_title">战略资本合作</h4>
+                <p style="font-size: 0.9rem; color: rgba(255,255,255,0.5);" data-i18n="about.qgf_card2_desc">与黑石集团、红杉资本、摩根大通等顶级机构保持紧密协作。</p>
+              </div>
+            </div>
+            <div class="qc-stat-item" style="padding: 0; overflow: hidden; background: #000; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px;">
+              <div style="height: 200px; overflow: hidden;">
+                <img src="/assets/images/qicheng/future-integrated-architecture.jpg" alt="风险对冲" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;" data-i18n="about.qgf_card3_img_alt" data-i18n-attr="alt">
+              </div>
+              <div style="padding: 1.5rem;">
+                <h4 style="color: #fff; margin-bottom: 1rem; font-size: 1.1rem;" data-i18n="about.qgf_card3_title">风险对冲机制</h4>
+                <p style="font-size: 0.9rem; color: rgba(255,255,255,0.5);" data-i18n="about.qgf_card3_desc">精细化风险控制，为全球合作伙伴提供稳健的技术与资金支持。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="mission" class="qc-about-section">
+          <header class="qc-about-section-header qc-reveal reveal-up">
+            <h2 data-i18n="about.mission_kicker">Mission & Values</h2>
+            <h3 class="qc-gradient-title" data-i18n="about.mission_title">五大核心价值观</h3>
+          </header>
+
+          <div class="qc-grid qc-grid-5 qc-reveal reveal-up stagger-1">
+            <div class="qc-chip-card" style="text-align: center;">
+              <i class="ri-eye-line" style="font-size: 48px; color: #fff; margin-bottom: 1rem; display: inline-block;"></i>
+              <h3 data-i18n="about.value_transparency_title">透明</h3>
+              <p data-i18n="about.value_transparency_desc">以数据与流程透明为基础，提升信任。</p>
+            </div>
+            <div class="qc-chip-card" style="text-align: center;">
+              <i class="ri-shield-check-line" style="font-size: 48px; color: #fff; margin-bottom: 1rem; display: inline-block;"></i>
+              <h3 data-i18n="about.value_security_title">安全</h3>
+              <p data-i18n="about.value_security_desc">技术与制度双重保障，守护资产安全。</p>
+            </div>
+            <div class="qc-chip-card" style="text-align: center;">
+              <i class="ri-shake-hands-line" style="font-size: 48px; color: #fff; margin-bottom: 1rem; display: inline-block;"></i>
+              <h3 data-i18n="about.value_collaboration_title">协作</h3>
+              <p data-i18n="about.value_collaboration_desc">跨地区、跨行业协同，共赢价值网络。</p>
+            </div>
+            <div class="qc-chip-card" style="text-align: center;">
+              <i class="ri-lightbulb-flash-line" style="font-size: 48px; color: #fff; margin-bottom: 1rem; display: inline-block;"></i>
+              <h3 data-i18n="about.value_innovation_title">创新</h3>
+              <p data-i18n="about.value_innovation_desc">探索 AI、区块链在金融中的高效落地。</p>
+            </div>
+            <div class="qc-chip-card" style="text-align: center;">
+              <i class="ri-leaf-line" style="font-size: 48px; color: #fff; margin-bottom: 1rem; display: inline-block;"></i>
+              <h3 data-i18n="about.value_sustainability_title">可持续</h3>
+              <p data-i18n="about.value_sustainability_desc">关注长期价值，将数字经济与绿色发展结合。</p>
+            </div>
+          </div>
+
+          <div class="qc-reveal reveal-up stagger-2" style="margin-top: 6rem; text-align: center;">
+            <h2 class="qc-resend-h2" data-i18n-html="about.resend_title">让数字金融成为<br>普惠的全球基础设施</h2>
+            <p class="qc-resend-p" data-i18n-html="about.resend_desc">人人可享、人人受益。我们致力于建设一个<span class="qc-text-highlight">透明</span>、<span class="qc-text-highlight">安全</span>、<span class="qc-text-highlight">智能</span>、<span class="qc-text-highlight">包容</span>的全球价值流动网络。</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="qc-footer">
+      <div class="qc-footer-brand" aria-hidden="true">
+        <span class="qc-footer-brand-text">QICHENG</span>
+      </div>
+      <div class="qc-container qc-footer-inner">
+        <div class="qc-footer-grid">
+          <div class="qc-footer-column qc-footer-contact">
+            <div class="qc-footer-logo">
+              <img src="../assets/images/qicheng-logo-wide.png" alt="Qicheng Holdings Group" />
+            </div>
+            <p class="qc-footer-address">
+              <span data-i18n="footer.tagline">全球数字金融与经济系统协作组织</span>
+            </p>
+            <div class="qc-footer-social" aria-label="关键页面" data-i18n="footer.aria_quick_pages" data-i18n-attr="aria-label">
+              <a class="qc-footer-social-icon" href="./txo.html" aria-label="TXO 交易所" title="TXO 交易所" data-i18n="footer.quick.txo" data-i18n-attr="aria-label,title">
+                <img src="../assets/icons/page-txo.svg" alt="TXO 交易所" data-i18n="footer.quick.txo" data-i18n-attr="alt" />
+              </a>
+              <a class="qc-footer-social-icon" href="./business-model.html" aria-label="商业模式" title="商业模式" data-i18n="footer.quick.business" data-i18n-attr="aria-label,title">
+                <img src="../assets/icons/page-business.svg" alt="商业模式" data-i18n="footer.quick.business" data-i18n-attr="alt" />
+              </a>
+              <a class="qc-footer-social-icon" href="./license.html" aria-label="合规与牌照" title="合规与牌照" data-i18n="footer.quick.license" data-i18n-attr="aria-label,title">
+                <img src="../assets/icons/page-license.svg" alt="合规与牌照" data-i18n="footer.quick.license" data-i18n-attr="alt" />
+              </a>
+            </div>
+            <div class="qc-footer-status">
+              <span class="qc-status-indicator"></span>
+              <span data-i18n="footer.status_ok">All systems operational</span>
+            </div>
+          </div>
+
+          <div class="qc-footer-column qc-footer-nav">
+            <h4>关于启诚</h4>
+            <ul>
+              <li><a href="./about.html">机构概览</a></li>
+              <li><a href="./about.html#founder">创始人</a></li>
+              <li><a href="./about.html#structure">组织结构</a></li>
+              <li><a href="./about.html#qgf">QGF 基金会</a></li>
+              <li><a href="./about.html#mission">使命</a></li>
+              <li><a href="./timeline.html">发展历程</a></li>
+              <li><a href="../index.html#testimonials">用户评价</a></li>
+            </ul>
+          </div>
+
+          <div class="qc-footer-column qc-footer-nav">
+            <h4>TXO 交易所</h4>
+            <ul>
+              <li><a href="./txo.html#origin">TXO 的诞生</a></li>
+              <li><a href="./txo.html#founder">创始人</a></li>
+              <li><a href="./txo.html#team">研发团队</a></li>
+              <li><a href="./txo.html#offline">线下交易服务</a></li>
+              <li><a href="./license.html#statement">合规与牌照</a></li>
+            </ul>
+          </div>
+
+          <div class="qc-footer-column qc-footer-nav">
+            <h4>商业模式</h4>
+            <ul>
+              <li><a href="./business-model.html#web2">WEB2 创新</a></li>
+              <li><a href="./business-model.html#core">核心模式</a></li>
+              <li><a href="./business-model.html#future">未来企划</a></li>
+              <li><a href="./business-model.html#v5">V5 战略</a></li>
+            </ul>
+          </div>
+
+          <div class="qc-footer-column qc-footer-nav">
+            <h4>盈利体系</h4>
+            <ul>
+              <li><a href="./profit.html#signals">交易信号系统</a></li>
+              <li><a href="./profit.html#referral">推荐计划</a></li>
+              <li><a href="./profit.html#vip">VIP 团队计划</a></li>
+              <li><a href="./profit.html#reports">收益报表</a></li>
+              <li><a href="./calculator.html">收益计算</a></li>
+            </ul>
+          </div>
+
+          <div class="qc-footer-column qc-footer-cta">
+            <h4 data-i18n="footer.cta_title">Ready to Trade?</h4>
+            <a href="https://txoca.com" target="_blank" class="qc-btn-footer-cta" data-i18n="footer.cta_button">立即交易</a>
+          </div>
+        </div>
+
+        <div class="qc-footer-bottom">
+          <div class="qc-footer-divider"></div>
+          <p>© <span id="year"></span> Qicheng Holdings Group. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var yearEl = document.getElementById("year");
+        if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+          // 标题鼠标跟随光效（仅作用于文字）
+          var heroTitle = document.querySelector(".qc-hero-title");
+          if (heroTitle) {
+            var currentX = 50, currentY = 50;
+            var targetX = 50, targetY = 50;
+            var rafId = null;
+
+            function updateGradient() {
+              currentX += (targetX - currentX) * 0.12;
+              currentY += (targetY - currentY) * 0.12;
+              heroTitle.style.setProperty("--mouse-x", currentX + "%");
+              heroTitle.style.setProperty("--mouse-y", currentY + "%");
+              rafId = requestAnimationFrame(updateGradient);
+            }
+
+            heroTitle.addEventListener("mouseenter", function () {
+              if (!rafId) rafId = requestAnimationFrame(updateGradient);
+            });
+
+            heroTitle.addEventListener("mousemove", function (e) {
+              var rect = heroTitle.getBoundingClientRect();
+              targetX = ((e.clientX - rect.left) / rect.width) * 100;
+              targetY = ((e.clientY - rect.top) / rect.height) * 100;
+            });
+
+            heroTitle.addEventListener("mouseleave", function () {
+              targetX = 50;
+              targetY = 50;
+              setTimeout(function () {
+                if (rafId) {
+                  cancelAnimationFrame(rafId);
+                  rafId = null;
+                }
+              }, 1200);
+            });
+          }
+
+          document.querySelectorAll(".qc-submenu a").forEach(function (link) {
+          link.addEventListener("click", function () {
+            var menu = link.closest(".qc-submenu");
+            if (!menu) return;
+            menu.style.opacity = "0";
+            menu.style.transform = "translateY(6px)";
+            menu.style.pointerEvents = "none";
+            setTimeout(function () {
+              menu.style.opacity = "";
+              menu.style.transform = "";
+              menu.style.pointerEvents = "";
+            }, 220);
+          });
+        });
+
+        // 滚动揭露动画 (Scroll Reveal)
+        var revealCallback = function (entries, observer) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              // 如果是数字增长动画
+              if (entry.target.classList.contains('qc-stat-item')) {
+                animateCounter(entry.target.querySelector('.qc-stat-value'));
+              }
+            } else {
+              // 离开视口时渐隐/消失
+              entry.target.classList.remove("is-visible");
+            }
+          });
+        };
+
+        var revealObserver = new IntersectionObserver(revealCallback, {
+          threshold: 0.1, // 元素出现 10% 时触发
+          rootMargin: "0px 0px -50px 0px"
+        });
+
+        document.querySelectorAll(".qc-reveal, .reveal-btn, .qc-stat-item").forEach(function (el) {
+          revealObserver.observe(el);
+        });
+
+        // 数字滚动动画函数
+        function animateCounter(el) {
+          if (!el || el.classList.contains('is-animated')) return;
+          
+          var target = parseFloat(el.getAttribute('data-counter-target'));
+          var start = parseFloat(el.getAttribute('data-counter-start'));
+          var suffix = el.getAttribute('data-counter-suffix') || '';
+          var duration = 2000; // 2秒动画
+          var startTime = null;
+
+          el.classList.add('is-animated');
+
+          function step(timestamp) {
+            if (!startTime) startTime = timestamp;
+            var progress = Math.min((timestamp - startTime) / duration, 1);
+            
+            // 使用 easeOutQuart 缓动函数
+            var easeProgress = 1 - Math.pow(1 - progress, 4);
+            var current = start + (target - start) * easeProgress;
+            
+            // 判断是否需要保留小数
+            if (target % 1 !== 0) {
+              el.textContent = current.toFixed(1) + suffix;
+            } else {
+              el.textContent = Math.floor(current) + suffix;
+            }
+
+            if (progress < 1) {
+              window.requestAnimationFrame(step);
+            } else {
+              // 确保最终值精确
+              el.textContent = (target % 1 !== 0 ? target.toFixed(1) : target) + suffix;
+            }
+          }
+
+          window.requestAnimationFrame(step);
+        }
+
+        // Hero Tabs Logic
+        var tabs = document.querySelectorAll('.qc-hero-tab');
+        var images = document.querySelectorAll('.qc-hero-image-wrapper');
+        var currentIndex = 0;
+        var intervalId = null;
+        var isPaused = false;
+
+        function switchTab(index) {
+          // Remove active class from all
+          tabs.forEach(function(t) { t.classList.remove('active'); });
+          images.forEach(function(img) { img.classList.remove('active'); });
+
+          // Add active class to target
+          if (tabs[index]) tabs[index].classList.add('active');
+          
+          // Show target image
+          var target = tabs[index].getAttribute('data-target');
+          var targetImg = document.getElementById('img-' + target);
+          if (targetImg) {
+            targetImg.classList.add('active');
+          }
+          currentIndex = index;
+        }
+
+        function nextTab() {
+          if (!isPaused) {
+            var nextIndex = (currentIndex + 1) % tabs.length;
+            switchTab(nextIndex);
+          }
+        }
+
+        function startAutoPlay() {
+          if (intervalId) clearInterval(intervalId);
+          intervalId = setInterval(nextTab, 4000); // Switch every 4 seconds
+        }
+
+        function stopAutoPlay() {
+          if (intervalId) clearInterval(intervalId);
+        }
+
+        // Initialize click handlers
+        tabs.forEach(function(tab, index) {
+          tab.addEventListener('click', function() {
+            isPaused = true; // Pause on interaction
+            switchTab(index);
+            // Optional: Restart autoplay after a delay if needed, or keep paused
+            stopAutoPlay();
+            setTimeout(function() { isPaused = false; startAutoPlay(); }, 10000); // Resume after 10s inactivity
+          });
+
+          // Pause on hover
+          tab.addEventListener('mouseenter', function() {
+            isPaused = true;
+          });
+          
+          tab.addEventListener('mouseleave', function() {
+            isPaused = false;
+          });
+        });
+
+        // Start carousel
+        startAutoPlay();
+      });
+    </script>
+    <script src="../assets/js/main.js?v=1.4"></script>
+    <script src="../assets/js/hero-tabs.js"></script>
+  </body>
+</html>
