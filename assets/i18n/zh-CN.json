@@ -357,6 +357,7 @@
   "calc.option_signals_2": "2 次 / 天 (基础会员)",
   "calc.option_signals_3": "3 次 / 天 (荣誉会员)",
   "calc.option_signals_4": "4 次 / 天 (团队会员)",
+  "calc.option_signals_5": "5 次 / 天 (推荐奖励)",
   "calc.label_days": "周期 (天)",
   "calc.placeholder_days": "例如：35",
   "calc.submit": "生成收益预览",
