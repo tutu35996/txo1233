@@ -3,6 +3,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const navList = document.querySelector('.qc-nav-list');
   const submenus = document.querySelectorAll('.qc-has-submenu');
 
+  document.querySelectorAll('img.qc-testimonial-avatar').forEach((img) => {
+    img.addEventListener(
+      'error',
+      () => {
+        if (img.dataset.qcFallbackApplied) return;
+        img.dataset.qcFallbackApplied = '1';
+        img.src = new URL('assets/images/qicheng-logo.png', document.baseURI).toString();
+      },
+      { once: true }
+    );
+  });
+
   const LANG_STORAGE_KEY = 'qc_lang';
   const RTL_LANGS = new Set(['ar']);
 
