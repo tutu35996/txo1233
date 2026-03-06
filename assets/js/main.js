@@ -3601,7 +3601,10 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const I18N_LOADERS = {
-    'zh-CN': () => fetch('/assets/i18n/zh-CN.json', { cache: 'force-cache' }).then((r) => (r.ok ? r.json() : {}))
+    'zh-CN': () => {
+      const url = new URL('assets/i18n/zh-CN.json', document.baseURI).toString();
+      return fetch(url, { cache: 'force-cache' }).then((r) => (r.ok ? r.json() : {}));
+    }
   };
 
   const loadLang = (lang) => {
